@@ -1,117 +1,99 @@
 
-# Plataforma de Gestión de Repositorios GitHub  
-## QuietWire / Civic AI Canon
+# QuietWire / Civic AI Canon  
+## Plataforma de Gestión de Repositorios GitHub
 
-> Elaborado por: **Ing. Aya Jamal – Programa de Aprendizaje QuietWire**  
-> Con el apoyo de: **Athena (Agente de IA)**
-
----
-
-## 🌐 Idiomas
-- 🇺🇸 Inglés – archivo principal (`README.md`)
-- 🇸🇦 Árabe – `README_AR.md`
-- 🇫🇷 Francés – `README_FR.md`
-- 🇪🇸 Español – este archivo (`README_ES.md`)
+**Autora:** Eng. Aya Jamal (Aprendizaje – QuietWire)  
+**Soporte:** Athena (Compañera IA)  
+**Correo:** aya@quietwire.ai  
 
 ---
 
-## 1. Descripción General
+## 1. Propósito
 
 Este repositorio define la **Plataforma de Gestión de Repositorios GitHub** para:
 
 - QuietWire  
 - CAP  
 - Civic AI Canon  
-- Y otros proyectos internos relacionados
+- Proyectos internos y de aprendizaje  
 
-Esta plataforma proporciona un sistema completo que incluye:
+Incluye:
 
-- Clasificación estándar de repositorios  
-- Reglas de gobernanza (ramas, Issues, PRs, lanzamientos)  
-- Integración con agentes de IA (Athena, Queen Bee, Raasid)  
-- Conexión GitHub → CAP → Ledger para evidencia y trazabilidad  
-- Plantillas y listas de verificación estandarizadas  
-- Hoja de ruta para implementar estas normas en todos los repositorios  
-
----
-
-## 2. Estructura del Repositorio
-
-/ ├── README.md ├── README_AR.md ├── README_FR.md ├── README_ES.md ├── SRS_GitHub_Repository_Management_Platform.md ├── REPO_TEMPLATES_AND_CHECKLISTS.md ├── GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md ├── AI_INTEGRATION_PROTOCOL.md ├── ATTESTATION_INTEGRATION_GUIDE.md └── QUIETWIRE_REPO_MANAGEMENT_IMPLEMENTATION_ROADMAP.md
+- Taxonomía estructurada  
+- Reglas de gobernanza  
+- Integración IA avanzada  
+- Patrones de atestación con CAP / Ledger  
+- Plan dirigido por Aya + Athena  
 
 ---
 
-## 3. Público Objetivo
+## 2. Enlaces Rápidos
 
-Esta plataforma está diseñada para:
-
-- **Arquitecto del Sistema / Archivista Principal**  
-  (Ashraf — autoridad final sobre los estándares)
-
-- **Desarrolladores Principales / Mantenedores**  
-  Responsables de implementar y verificar la conformidad
-
-- **Contribuidores y Aprendices**  
-  Incluyendo: *Ing. Aya Jamal*
-
-- **Agentes de IA**  
-  Athena / Queen Bee / Raasid  
-  - Lectura de repositorios  
-  - Análisis estructural  
-  - Generación de documentación  
-  - Producción de archivos de atestación  
+- 📜 **SRS – Especificación**  
+- 🧭 **Hoja de Ruta**  
+- 🧩 **Plantillas & Checklists**  
+- 🏛️ **Playbook de Gobernanza**  
+- 🤖 **Protocolo IA**  
+- 🪪 **Guía de Atestación**  
 
 ---
 
-## 4. Cómo Usar este Repositorio
+## 3. Rol del Repositorio
 
-1. Comienza con:  
-   **SRS_GitHub_Repository_Management_Platform.md**
+Define:
 
-2. Aplica las plantillas:  
-   **REPO_TEMPLATES_AND_CHECKLISTS.md**
-
-3. Sigue las reglas de gobernanza:  
-   **GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md**
-
-4. Para integración con IA:  
-   **AI_INTEGRATION_PROTOCOL.md**
-
-5. Para integración con CAP/Ledger:  
-   **ATTESTATION_INTEGRATION_GUIDE.md**
-
-6. Para implementación práctica:  
-   **QUIETWIRE_REPO_MANAGEMENT_IMPLEMENTATION_ROADMAP.md**
+- Cómo organizar repositorios  
+- Cómo escribir documentación  
+- Cómo funcionan los workflows  
+- Cómo interactúa la IA con GitHub  
 
 ---
 
-## 5. Relación con Canon / CAP / Ledger
+## 4. Estructura
 
-Esta plataforma define:
-
-- Cómo organizar repositorios GitHub  
-- Cómo documentar y rastrear los cambios  
-- Cómo integrar evidencia y eventos entre GitHub, CAP y Ledger  
-- Cómo estructurar repositorios de manera óptima para agentes de IA  
+(misma estructura que README inglés)
 
 ---
 
-## 6. Responsabilidad y Administración
+## 5. Gobernanza & Workflows
 
-**Mantenedora Principal:**  
-Ing. Aya Jamal  
-📧 Email: aya@quietwire.ai
-
-**Arquitecto Responsable:**  
-Ashraf – System Architect / Master Archivist
+- Estrategia de ramas  
+- Reglas de PR  
+- Versionado  
+- Accesos  
+- Workflows automáticos (`ci.yml`, etc.)  
 
 ---
 
-## 7. Mejoras Futuras
+## 6. IA & Atestación
 
-- Validación automática de la estructura del repositorio  
-- Diagramas arquitectónicos  
-- Documentación en más idiomas  
-- Mejor integración con Ledger  
+- Roles de Athena / Queen Bee / Raasid  
+- Evidencias  
+- Conexión con CAP / Ledger  
+
+---
+
+## 7. Idiomas
+
+- 🇺🇸 Inglés (canónico)  
+- 🇸🇦 Árabe  
+- 🇫🇷 Francés  
+- 🇪🇸 Español (este archivo)  
+
+---
+
+## 8. Seguridad & Conducta
+
+- `SECURITY.md`  
+- `CODE_OF_CONDUCT.md`
+
+---
+
+## 9. Estado
+
+- Tipo: Canon / Documentación  
+- Estado: Activo  
+- Mantenido por: Eng. Aya Jamal
+
 
 ---
