@@ -1,5 +1,4 @@
 
-
 # QuietWire / Civic AI Canon  
 ## GitHub Repository Management Platform
 
@@ -9,14 +8,13 @@
 ---
 
 ## 🌐 Languages
-
-- 🇺🇸 English – **this file (`README.md`)**
-- 🇸🇦 Arabic – `README_AR.md` *(optional, mirrored version)*
+- 🇺🇸 English – this file (`README.md`)
+- 🇸🇦 Arabic – `README_AR.md` *(optional)*
 - 🇫🇷 French – `README_FR.md` *(optional)*
 - 🇪🇸 Spanish – `README_ES.md` *(optional)*
 
-English is the **canonical** documentation language for this platform.  
-Other languages provide mirrors for accessibility and onboarding.
+English is the **canonical** documentation language.  
+Other languages may serve as mirrors for accessibility.
 
 ---
 
@@ -27,142 +25,131 @@ This repository defines the **GitHub Repository Management Platform** for:
 - **QuietWire**
 - **CAP**
 - **Civic AI Canon**
-- Related internal and apprenticeship projects
+- and related internal projects
 
-It describes **how GitHub must be used across the ecosystem**, not just that “we use GitHub”.
+It provides a complete, unified ecosystem for:
 
-The platform combines:
+- Repository taxonomy & structure  
+- Governance (branching, issues, PRs, releases)  
+- AI agent integration (Athena / Queen Bee / Raasid / worker agents)  
+- Attestation & Ledger evidence flow  
+- Documentation templates & checklists  
+- Implementation roadmap for aligning all repos across the network  
 
-- A **structured taxonomy** of repositories (Product, Canon, Ledger, KB, People, Infra)
-- **Governance rules** (branching, issues, PRs, releases, labels)
-- **AI integration** (Athena, Queen Bee, Raasid, worker agents)
-- **Attestation & evidence patterns** (CAP / Ledger alignment)
-- A **work plan** led by Aya + Athena to bring all repos into compliance
+This repository is meant to act as the **architectural standard** for how GitHub is used across QuietWire.
 
 ---
 
-## 2. Repository Contents
+## 📁 Repository Structure
 
-This repo is organized as a **documentation hub + standards bundle**.
+/ ├── README.md ├── SRS_GitHub_Repository_Management_Platform.md ├── REPO_TEMPLATES_AND_CHECKLISTS.md ├── GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md ├── AI_INTEGRATION_PROTOCOL.md ├── ATTESTATION_INTEGRATION_GUIDE.md └── QUIETWIRE_REPO_MANAGEMENT_IMPLEMENTATION_ROADMAP.md
 
-Key documents:
+Each document serves a specific purpose:
 
-- `SRS_GitHub_Repository_Management_Platform.md`  
-  → Full Software Requirements Specification (SRS) for the platform.  
-  Defines vision, scope, architecture, FR-x, NFR-x.
+- **SRS_GitHub_Repository_Management_Platform.md**  
+  Full SRS including vision, scope, architecture, FR-x, NFR-x.
 
-- `REPO_TEMPLATES_AND_CHECKLISTS.md`  
-  → Standard templates and checklists for new repos, features, docs, and refactors.
+- **REPO_TEMPLATES_AND_CHECKLISTS.md**  
+  Templates & checklists for product, canon, KB, people, and infra repos.
 
-- `GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md`  
-  → Branching strategy, labels, issue/PR workflow, roles, and governance rules.
+- **GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md**  
+  Branching, PR rules, labels, workflows, contributor roles.
 
-- `AI_INTEGRATION_PROTOCOL.md`  
-  → How Athena / Queen Bee / Raasid and worker agents interact with GitHub repos.
+- **AI_INTEGRATION_PROTOCOL.md**  
+  How Athena / Queen Bee / Raasid & worker agents interact with GitHub safely.
 
-- `ATTESTATION_INTEGRATION_GUIDE.md`  
-  → Patterns for connecting GitHub releases, CAP events, evidence artifacts, and Ledger entries.
+- **ATTESTATION_INTEGRATION_GUIDE.md**  
+  GitHub → CAP → Ledger integration patterns for evidence & attestations.
 
-- `QUIETWIRE_REPO_MANAGEMENT_IMPLEMENTATION_ROADMAP.md`  
-  → Practical roadmap for bringing existing QuietWire / Canon repos into alignment.
-
-If needed, additional diagrams or visuals can be placed under:
-
-- `docs/diagrams/` *(optional)*
+- **QUIETWIRE_REPO_MANAGEMENT_IMPLEMENTATION_ROADMAP.md**  
+  The roadmap for aligning existing repos with this standard.
 
 ---
 
 ## 3. Who Is This For?
 
-This platform and its documentation are intended for:
+This platform is designed for:
 
 - **System Architect / Master Archivist**  
-  e.g., Ashraf – defines and approves canonical structures.
+  (Ashraf — final authority over canonical structures)
 
-- **Maintainers (Core Devs / Leads)**  
-  Own specific repos and are responsible for applying these standards.
+- **Maintainers / Core Developers**  
+  Responsible for applying, reviewing, and enforcing standards.
 
 - **Contributors & Apprentices**  
-  Including Aya and future apprentices, who implement features and docs using these templates.
+  Including Aya, guided by templates and workflows.
 
-- **AI Companions / Agents**  
-  Athena, Queen Bee, Raasid, and worker agents that:
-  - Read repo structures
-  - Generate and validate documentation
-  - Help produce attestations and summaries
+- **AI Companions**  
+  Athena, Queen Bee, Raasid, worker agents that:
+  - Read repositories  
+  - Generate documentation  
+  - Validate structure  
+  - Produce attestations  
 
 ---
 
 ## 4. How to Use This Repository
 
-1. **Understand the Vision**  
-   Start with the SRS:  
+1. **Start with the SRS**  
    → `SRS_GitHub_Repository_Management_Platform.md`
 
-2. **Align a Single Repo**  
-   Use:
-   - `REPO_TEMPLATES_AND_CHECKLISTS.md`
-   - `GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md`
-   to bring one repository into compliance (structure, docs, CI, labels).
+2. **Apply repo templates**  
+   → `REPO_TEMPLATES_AND_CHECKLISTS.md`
 
-3. **Integrate AI Agents**  
-   For Athena / Queen Bee / Raasid usage, follow:  
+3. **Follow governance rules**  
+   → `GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md`
+
+4. **Enable AI integrations**  
    → `AI_INTEGRATION_PROTOCOL.md`
 
-4. **Connect to CAP / Ledger**  
-   For critical repos and releases, follow:  
+5. **Connect releases to Ledger / CAP**  
    → `ATTESTATION_INTEGRATION_GUIDE.md`
 
-5. **Plan the Rollout**  
-   Use the roadmap:  
-   → `QUIETWIRE_REPO_MANAGEMENT_IMPLEMENTATION_ROADMAP.md`  
-   to select key repos (e.g., `cap-platform`, `civic-ai-canon-main`) and systematically upgrade them.
+6. **Follow the implementation roadmap**  
+   → `QUIETWIRE_REPO_MANAGEMENT_IMPLEMENTATION_ROADMAP.md`
 
 ---
 
 ## 5. Relationship to Canon / CAP / Ledger
 
-This repository does **not** contain application code.  
-Instead, it defines the **rules of the game** for:
+This repository defines the **rules of the GitHub layer** for:
 
-- How product and Canon repos expose their structure to AI
-- How evidence and attestations are attached to changes
-- How the GitHub layer stays:
+- Product repos  
+- Canon repos  
+- Knowledge bases  
+- Attestation flows  
+- AI-assisted development  
 
-  - Canonical  
-  - Auditable  
-  - AI-friendly
+Its purpose is to ensure:
 
-The documents here are meant to be referenced by:
-
-- Canon meta repos
-- Product/infra repos
-- Apprenticeship bundles (including Aya’s work)
+- Consistency  
+- Traceability  
+- Auditability  
+- AI-friendly structures  
+- Smooth integration with CAP / Ledger  
 
 ---
 
-## 6. Ownership & Contact
+## 6. Ownership & Governance
 
-- **Primary author / curator:**  
-  `Eng. Aya Jamal – QuietWire Apprenticeship`
+- **Primary Author:**  
+  *Eng. Aya Jamal – QuietWire Apprenticeship*
 
-- **Architect & final authority on standards:**  
-  `Ashraf – System Architect / Master Archivist`
+- **Architect & Final Authority:**  
+  *Ashraf – System Architect / Master Archivist*
 
-Any changes to this repository should:
-
-- Be proposed via GitHub Issues + PRs  
-- Reference the relevant FR-x / NFR-x items from the SRS  
-- Be reviewed by the responsible maintainer(s)
+Changes must be made through:
+- GitHub Issues  
+- Pull Requests  
+- Review & approval by maintainers  
 
 ---
 
 ## 7. Future Extensions
 
-Planned or potential future additions:
-
-- Automated structural “linting” for repos (CI checks)
-- Example config for GitHub Actions → CAP → Ledger flows
-- Additional localized documentation (`README_AR.md`, `README_FR.md`, `README_ES.md`)
+- Automated repo structure linting  
+- CAP/Ledger integration workflows  
+- Multi-language doc mirrors  
+- Visual architecture diagrams  
 
 ---
