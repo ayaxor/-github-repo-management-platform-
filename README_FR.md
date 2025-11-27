@@ -1,4 +1,4 @@
-Cover](file_00000000267c71f5aaea483a32ccc534.png)
+
 
 # QuietWire / Civic AI Canon  
 ## Plateforme de Gestion des Dépôts GitHub
