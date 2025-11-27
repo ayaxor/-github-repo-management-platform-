@@ -1,0 +1,39 @@
+
+ci.yml
+
+name: QuietWire CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install markdownlint
+        run: npm install -g markdownlint-cli
+
+      - name: Run markdown lint
+        run: markdownlint "**/*.md"
+
+      - name: Validate YAML files
+        run: |
+          sudo apt-get install yamllint -y
+          yamllint .
+
+      - name: Validate JSON files
+        run: |
+          sudo apt-get install jq -y
+          find . -name "*.json" -exec jq . {} \;
+
