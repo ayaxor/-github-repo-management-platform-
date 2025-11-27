@@ -76,3 +76,11 @@ Thank you for contributing to the evolution of the QuietWire / Civic AI Canon ec
 
 
 ---
+Contact
+
+For questions, contributions coordination, or clarification regarding the QuietWire / Civic AI Canon Repository Management Platform, please contact:
+
+**Eng. Aya Jamal**  
+Primary Maintainer  
+📧 Email: aya@quietwire.ai
+
