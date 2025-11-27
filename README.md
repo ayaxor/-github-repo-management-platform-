@@ -1,38 +1,41 @@
 
-![QuietWire Cover](file_00000000267c71f5aaea483a32ccc534.png)
+<p align="center">
+  <img src="./file_00000000267c71f5aaea483a32ccc534.png" width="100%" alt="QuietWire Cover"/>
+</p>
 
 # QuietWire / Civic AI Canon  
 ## GitHub Repository Management Platform
 
-**Author:** Eng. Aya Jamal (Apprenticeship – QuietWire)  
-**With support from:** Athena (AI Companion)  
-**Contact:** aya@quietwire.ai  
+**Author:** Eng. Aya Jamal  
+**Apprenticeship — QuietWire**  
+**Email:** aya@quietwire.ai  
 
 ---
 
 ## 1. Purpose
 
-This repository defines the **GitHub Repository Management Platform** for:
+This repository defines the **canonical GitHub Repository Management Platform** used across:
 
 - QuietWire  
 - CAP  
 - Civic AI Canon  
-- Related internal and apprenticeship projects  
+- Apprenticeship & internal ecosystem projects  
 
-It is **not** “just a repo”.  
-It is the **canonical spec** for how GitHub must be used across the QuietWire ecosystem:
+It sets the rules for:
 
-- A structured taxonomy of repos  
-- Governance rules (branches, issues, PRs, releases, labels)  
-- AI integration (Athena, Queen Bee, Raasid, worker agents)  
-- Attestation & evidence patterns (CAP / Ledger alignment)  
-- A work plan led by Aya + Athena to bring all repos into compliance  
+- Repository structure  
+- Governance & workflows  
+- AI agent interactions  
+- Attestation & CAP/Ledger integration  
+- Documentation standards  
+
+> [!IMPORTANT]  
+> This repository is the **source of truth** for how GitHub must be used across the QuietWire ecosystem.  
+> All other repos must follow its templates, structure, and workflow rules.
 
 ---
 
 ## 2. Quick Links
-
-> Start here if you want to understand the platform.
 
 - 📜 **SRS – System Requirements**  
   [`SRS_GitHub_Repository_Management_Platform.md`](./SRS_GitHub_Repository_Management_Platform.md)
@@ -49,29 +52,33 @@ It is the **canonical spec** for how GitHub must be used across the QuietWire ec
 - 🤖 **AI Integration Protocol**  
   [`AI_INTEGRATION_PROTOCOL.md`](./AI_INTEGRATION_PROTOCOL.md)
 
-- ✅ **Attestation Integration Guide**  
+- 🪪 **Attestation Integration Guide**  
   [`ATTESTATION_INTEGRATION_GUIDE.md`](./ATTESTATION_INTEGRATION_GUIDE.md)
 
-- 🔁 **Workflows Documentation (Mermaid diagrams)**  
+- 🔁 **Workflows Documentation (Mermaid)**  
   [`QUIETWIRE_WORKFLOWS_DOCUMENTATION.md`](./QUIETWIRE_WORKFLOWS_DOCUMENTATION.md)
+
+> [!TIP]  
+> Start with the **SRS** to understand the system architecture and platform scope.
 
 ---
 
 ## 3. Repository Role in the Ecosystem
 
-This repo is the **canonical documentation hub** for:
+This repo is designed so:
 
-- How QuietWire organizes GitHub orgs and repos  
-- How code, docs, and configs are structured  
-- How AI agents read, summarize, and attest to changes  
-- How CAP events and Ledger entries are connected to GitHub releases  
+- New contributors can understand the ecosystem in minutes  
+- AI agents can parse it cleanly  
+- Governance stays consistent across all repos  
+- Releases map to CAP Events and Ledger entries  
 
-Any new apprentice, partner, or AI agent should be able to:
+This repo ensures:
 
-1. Open this repo  
-2. Read this README  
-3. Follow the links  
-4. Understand the entire platform in minutes  
+- Structure  
+- Consistency  
+- Clarity  
+- Auditability  
+- AI-friendly documentation patterns  
 
 ---
 
@@ -81,9 +88,6 @@ Any new apprentice, partner, or AI agent should be able to:
 .
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
-│   │   ├── bug_report.md
-│   │   ├── documentation_task.md
-│   │   └── feature_request.md
 │   ├── PULL_REQUEST_TEMPLATE.md
 │   └── workflows/
 │       ├── ci.yml
@@ -114,83 +118,85 @@ Any new apprentice, partner, or AI agent should be able to:
 
 5. Governance & Workflows
 
-For full governance details, see:
-📘 GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md
-
-This includes:
+This repository defines the official governance rules:
 
 Branching strategy (main, develop, feature/*, hotfix/*)
 
-Issue workflow (labels, status, difficulty, ownership)
+Issue labels and templates
 
-Pull Request rules (templates, reviews, status checks)
+PR review rules
 
-Release & tagging conventions
+Release process
 
-Access control & roles (Admin, Maintainer, Contributor, Reader)
+Access control
 
 
-GitHub Actions in .github/workflows enforce basic quality checks:
+GitHub Actions enforce:
 
-ci.yml – Markdown, YAML, JSON validation
+Code quality
 
-codeql.yml – security analysis
+Documentation lint
 
-markdown-lint.yml – documentation linting
+Security checks
 
-repo-sync.yml – repo sync hook (manual dispatch)
+Repo synchronization
+
+
+> [!WARNING]
+Direct commits to main are not allowed.
+All changes must come through Pull Requests with proper review and CI checks.
+
 
 
 
 ---
 
-6. AI & Attestation
+6. AI & Attestation Integration
 
-AI Integration:
-📄 AI_INTEGRATION_PROTOCOL.md
+AI Agents (Athena, Queen Bee, Raasid, Worker Agents):
 
-Covers:
+Read and classify repository content
 
-Roles of Athena, Queen Bee, Raasid, worker agents
+Generate documentation
 
-How agents read repos, classify content, and propose changes
+Suggest refactoring
 
-What they are allowed to do / not do without human approval
-
-Logging and evidence patterns for AI actions
+Produce structured outputs
 
 
-Attestation & Ledger Integration:
-📄 ATTESTATION_INTEGRATION_GUIDE.md
-
-Defines:
+Attestation Layer:
 
 GitHub Release → CAP Event → Ledger Entry
 
-Evidence folders and CI artifacts
+Evidence artifacts are generated through CI
 
-Patterns for pilots and critical repos
+
+> [!NOTE]
+AI agents may analyze and recommend changes,
+but they never commit without human approval.
+
 
 
 
 ---
 
-7. Documentation & Architecture
+7. Documentation Set
 
-🧱 System Requirements:
-SRS_GitHub_Repository_Management_Platform.md
+This repository includes:
 
-🏗️ Architecture Overview:
-docs/architecture-diagram.md
+System Requirements (SRS)
 
-🗺️ Repository Map:
-docs/repo_map.md
+Governance handbook
 
-🤖 AI Analysis Notes:
-docs/ai-analysis.md
+AI protocols
 
-🔁 Detailed Workflows (Mermaid):
-QUIETWIRE_WORKFLOWS_DOCUMENTATION.md
+Attestation guide
+
+Repo templates and checklists
+
+Workflows documentation
+
+Architecture overview
 
 
 
@@ -198,69 +204,38 @@ QUIETWIRE_WORKFLOWS_DOCUMENTATION.md
 
 8. Languages
 
-English is the canonical language for this repo.
-Mirrored READMEs are provided for accessibility:
+This repository provides multilingual documentation:
 
-🇺🇸 English – README.md (this file)
+🇺🇸 English — Canonical
 
-🇸🇦 Arabic – README_AR.md
+🇸🇦 Arabic — README_AR.md
 
-🇫🇷 French – README_FR.md
+🇫🇷 French — README_FR.md
 
-🇪🇸 Spanish – README_ES.md
-
-
-
----
-
-9. Contribution Guidelines
-
-Before opening an Issue or PR:
-
-1. Read CONTRIBUTING.md
-
-
-2. Use the appropriate Issue template:
-
-🐞 Bug report
-
-✨ Feature request
-
-📚 Documentation task
-
-
-
-3. Always link issues in your PR (Fixes #123)
-
-
-4. Follow the PR template: PULL_REQUEST_TEMPLATE.md
-
+🇪🇸 Spanish — README_ES.md
 
 
 
 ---
 
-10. Security & Code of Conduct
+9. Security & Code of Conduct
 
-🔐 Security policy: SECURITY.md
+🔐 Security Policy: SECURITY.md
 
 🤝 Code of Conduct: CODE_OF_CONDUCT.md
 
 
-Security issues should be reported privately to:
-📧 aya@quietwire.ai
-
 
 ---
 
-11. Status & Ownership
+10. Ownership & Status
 
-Repository Type: Canon / Governance / Documentation
+Owner: Eng. Aya Jamal
 
-Status: Active – under continuous improvement
+Status: Active
 
-Owner / Maintainer: Eng. Aya Jamal (with guidance from Ashraf Al-Haj)
+Purpose: Canonical reference for all QuietWire repository management practices
 
 
-This repo is the source of truth for how QuietWire uses GitHub.
-All future repos, templates, and AI workflows should align with this spec.
+> [!SUCCESS]
+This repository now meets QuietWire’s Canonical Documentation Standards.
