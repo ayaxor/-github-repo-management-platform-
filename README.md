@@ -1,179 +1,266 @@
 
+![QuietWire Cover](file_00000000267c71f5aaea483a32ccc534.png)
 
-<div align="center">
-  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAYAAABT1y9OAAAABmJLR0QA/wD/AP+gvaeTAAAgAElEQVR4nOy9eZxV5b3/9xW39i0gCFCghQAAEpAk6eSu4gCmCAopiUwyyoqIuTkQVOQ9KAmBQyVpV6Vq1e7s1zueeXd1t53svt93v8+5nZkz97n7nvvOd2bOXPmzDKfz8wkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA…" alt="QuietWire Cover" width="100%" />
-</div>
+# QuietWire / Civic AI Canon  
+## GitHub Repository Management Platform
 
-
-# ⚡️ QuietWire / Civic AI Canon  
-## **GitHub Repository Management Platform**
-
-### Designed & Engineered by  
-## **Eng. Aya Jamal**  
-📧 aya@quietwire.ai
+**Author:** Eng. Aya Jamal (Apprenticeship – QuietWire)  
+**With support from:** Athena (AI Companion)  
+**Contact:** aya@quietwire.ai  
 
 ---
 
-<img src="https://img.shields.io/badge/QuietWire-Architecture-black?style=for-the-badge&logo=github" />
-<img src="https://img.shields.io/badge/AI%20Powered-Athena-blueviolet?style=for-the-badge&logo=ai" />
-<img src="https://img.shields.io/badge/Civic%20AI%20Canon-Ledger-orange?style=for-the-badge&logo=data" />
-<img src="https://img.shields.io/badge/Standards-Professional-green?style=for-the-badge&logo=check" />
+## 1. Purpose
 
----
-
-### 🌐 Multilingual Documentation  
-🇺🇸 English • 🇸🇦 Arabic • 🇫🇷 French • 🇪🇸 Spanish
-
----
-
-### **A Complete Enterprise-Level Documentation Platform**  
-for managing repositories, workflows, standards, attestation,  
-AI integration, and CAP/Ledger connectivity across QuietWire.
-
----
-
-</div>
-
----
-
-# 📘 1. Overview
-
-This repository defines the **entire GitHub Repository Management Platform** used across:
+This repository defines the **GitHub Repository Management Platform** for:
 
 - QuietWire  
 - CAP  
 - Civic AI Canon  
-- Apprenticeship & Internal Frameworks  
+- Related internal and apprenticeship projects  
 
-It includes:
+It is **not** “just a repo”.  
+It is the **canonical spec** for how GitHub must be used across the QuietWire ecosystem:
 
-- Repository taxonomy & folder standards  
-- Governance rules (Issues, PRs, CI, branching)  
-- AI agent protocols (Athena / QueenBee / Raasid)  
-- Attestation guidelines (GitHub → CAP → Ledger)  
-- Templates, checklists, and roadmap for implementation
-
----
-
-# 🧩 2. Architecture Overview
-
-┌──────────────────────────┐
-             │   QuietWire GitHub Org    │
-             └─────────────┬────────────┘
-                           │
-          ┌────────────────┴──────────────────┐
-          │                                     │
- ┌────────▼────────┐                 ┌─────────▼────────┐
- │ Repository Layer │                 │ Governance Layer  │
- │ (Product/Canon/  │                 │ (Issues/PRs/CI/   │
- │  KB/Infra/People)│                 │  Templates/Roadmap)│
- └────────┬─────────┘                 └─────────┬─────────┘
-          │                                       │
-          │                                       │
- ┌────────▼────────┐                 ┌───────────▼──────────┐
- │ Documentation    │                 │ AI Agent Layer        │
- │ (SRS, Templates, │                 │ (Athena, QueenBee,    │
- │ Governance, AI,  │                 │  Raasid, Worker Bots) │
- │ Attestation…)    │                 └───────────┬──────────┘
- └────────┬────────┘                             │
-          │                                       │
- ┌────────▼──────────┐                ┌───────────▼─────────┐
- │ Evidence & CI/CD  │                │ CAP → Ledger Layer   │
- │ (Logs, Tests,      │                │ (Events, Attestation │
- │ SBOM, Artifacts)   │                │  Proofs, Traceability)│
- └────────────────────┘                └───────────────────────┘
+- A structured taxonomy of repos  
+- Governance rules (branches, issues, PRs, releases, labels)  
+- AI integration (Athena, Queen Bee, Raasid, worker agents)  
+- Attestation & evidence patterns (CAP / Ledger alignment)  
+- A work plan led by Aya + Athena to bring all repos into compliance  
 
 ---
 
-# 📁 3. Repository Structure
+## 2. Quick Links
 
-/ ├── README.md ├── README_AR.md ├── README_FR.md ├── README_ES.md │ ├── SRS_GitHub_Repository_Management_Platform.md ├── REPO_TEMPLATES_AND_CHECKLISTS.md ├── GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md ├── AI_INTEGRATION_PROTOCOL.md ├── ATTESTATION_INTEGRATION_GUIDE.md └── QUIETWIRE_REPO_MANAGEMENT_IMPLEMENTATION_ROADMAP.md │ └── .github/ ├── PULL_REQUEST_TEMPLATE.md ├── ISSUE_TEMPLATE/ │   ├── bug_report.md │   ├── feature_request.md │   └── documentation_task.md │ └── docs/ └── architecture-diagram.md
+> Start here if you want to understand the platform.
 
----
+- 📜 **SRS – System Requirements**  
+  [`SRS_GitHub_Repository_Management_Platform.md`](./SRS_GitHub_Repository_Management_Platform.md)
 
-# 🧱 4. Core Components
+- 🧭 **Implementation Roadmap**  
+  [`QUIETWIRE_REPO_MANAGEMENT_IMPLEMENTATION_ROADMAP.md`](./QUIETWIRE_REPO_MANAGEMENT_IMPLEMENTATION_ROADMAP.md)
 
-### ✔️ Software Requirements Specification (SRS)  
-Defines system vision, FR/NFR, architecture, and scope.
+- 🧩 **Repo Templates & Checklists**  
+  [`REPO_TEMPLATES_AND_CHECKLISTS.md`](./REPO_TEMPLATES_AND_CHECKLISTS.md)
 
-### ✔️ Repo Templates & Checklists  
-Standard folder structures for Product, Canon, KB, Infra.
+- 🏛️ **Governance & Workflow Playbook**  
+  [`GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md`](./GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md)
 
-### ✔️ Governance & Workflow  
-Branch strategy, PR rules, labels, contributor roles.
+- 🤖 **AI Integration Protocol**  
+  [`AI_INTEGRATION_PROTOCOL.md`](./AI_INTEGRATION_PROTOCOL.md)
 
-### ✔️ AI Integration Protocol  
-Defines how Athena / QueenBee / Raasid interact safely with GitHub.
+- ✅ **Attestation Integration Guide**  
+  [`ATTESTATION_INTEGRATION_GUIDE.md`](./ATTESTATION_INTEGRATION_GUIDE.md)
 
-### ✔️ Attestation Integration  
-How GitHub Releases → CAP Events → Ledger Proofs.
-
-### ✔️ Implementation Roadmap  
-Steps to align all QuietWire repos with the new system.
-
----
-
-# 🤖 5. AI Agents Compatibility
-
-Agents supported:
-
-- **Athena** (Documentation / Analysis / Structure Review)  
-- **QueenBee** (High-level planning, orchestration)  
-- **Raasid** (Evidence & Attestation)  
-- **Worker Bots** (Specific repo tasks)
-
-Agents can:
-
-- Read repo structure  
-- Suggest improvements  
-- Generate docs  
-- Produce machine-readable outputs  
-- Never commit silently (PR only)
+- 🔁 **Workflows Documentation (Mermaid diagrams)**  
+  [`QUIETWIRE_WORKFLOWS_DOCUMENTATION.md`](./QUIETWIRE_WORKFLOWS_DOCUMENTATION.md)
 
 ---
 
-# 🛠 6. How to Use
+## 3. Repository Role in the Ecosystem
 
-1. Start with the SRS  
-2. Apply templates  
-3. Follow governance rules  
-4. Integrate AI workflows  
-5. Link releases to CAP/Ledger  
-6. Follow roadmap
+This repo is the **canonical documentation hub** for:
 
----
+- How QuietWire organizes GitHub orgs and repos  
+- How code, docs, and configs are structured  
+- How AI agents read, summarize, and attest to changes  
+- How CAP events and Ledger entries are connected to GitHub releases  
 
-# 🔐 7. Security & Compliance
+Any new apprentice, partner, or AI agent should be able to:
 
-- No direct commits to `main`  
-- CI/CD required before merge  
-- Evidence required for critical changes  
-- Use GitHub Secrets for sensitive data  
-- Follow SECURITY.md for disclosures  
+1. Open this repo  
+2. Read this README  
+3. Follow the links  
+4. Understand the entire platform in minutes  
 
 ---
 
-# 👑 8. Maintainer Contact
+## 4. Repository Structure
 
-**Primary Maintainer:**  
-**Eng. Aya Jamal**  
-📧 **aya@quietwire.ai**
+```text
+.
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.md
+│   │   ├── documentation_task.md
+│   │   └── feature_request.md
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   └── workflows/
+│       ├── ci.yml
+│       ├── codeql.yml
+│       ├── markdown-lint.yml
+│       └── repo-sync.yml
+├── docs/
+│   ├── architecture-diagram.md
+│   ├── ai-analysis.md
+│   └── repo_map.md
+├── AI_INTEGRATION_PROTOCOL.md
+├── ATTESTATION_INTEGRATION_GUIDE.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md
+├── QUIETWIRE_REPO_MANAGEMENT_IMPLEMENTATION_ROADMAP.md
+├── QUIETWIRE_WORKFLOWS_DOCUMENTATION.md
+├── REPO_TEMPLATES_AND_CHECKLISTS.md
+├── SECURITY.md
+├── SRS_GitHub_Repository_Management_Platform.md
+├── README.md
+├── README_AR.md
+├── README_FR.md
+└── README_ES.md
 
-**Architect & Final Reviewer:**  
-Ashraf – QuietWire System Architect
 
 ---
 
-# 🌍 9. Multi-language Support
+5. Governance & Workflows
 
-- `README.md` (English – Canonical)  
-- `README_AR.md` (Arabic)  
-- `README_FR.md` (French)  
-- `README_ES.md` (Spanish)
+For full governance details, see:
+📘 GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md
+
+This includes:
+
+Branching strategy (main, develop, feature/*, hotfix/*)
+
+Issue workflow (labels, status, difficulty, ownership)
+
+Pull Request rules (templates, reviews, status checks)
+
+Release & tagging conventions
+
+Access control & roles (Admin, Maintainer, Contributor, Reader)
+
+
+GitHub Actions in .github/workflows enforce basic quality checks:
+
+ci.yml – Markdown, YAML, JSON validation
+
+codeql.yml – security analysis
+
+markdown-lint.yml – documentation linting
+
+repo-sync.yml – repo sync hook (manual dispatch)
+
+
 
 ---
 
-# 🏁 10. Status  
-**Version:** v1.0  
-**Status:** Documentation Complete — Ready for Public Release
+6. AI & Attestation
 
+AI Integration:
+📄 AI_INTEGRATION_PROTOCOL.md
+
+Covers:
+
+Roles of Athena, Queen Bee, Raasid, worker agents
+
+How agents read repos, classify content, and propose changes
+
+What they are allowed to do / not do without human approval
+
+Logging and evidence patterns for AI actions
+
+
+Attestation & Ledger Integration:
+📄 ATTESTATION_INTEGRATION_GUIDE.md
+
+Defines:
+
+GitHub Release → CAP Event → Ledger Entry
+
+Evidence folders and CI artifacts
+
+Patterns for pilots and critical repos
+
+
+
+---
+
+7. Documentation & Architecture
+
+🧱 System Requirements:
+SRS_GitHub_Repository_Management_Platform.md
+
+🏗️ Architecture Overview:
+docs/architecture-diagram.md
+
+🗺️ Repository Map:
+docs/repo_map.md
+
+🤖 AI Analysis Notes:
+docs/ai-analysis.md
+
+🔁 Detailed Workflows (Mermaid):
+QUIETWIRE_WORKFLOWS_DOCUMENTATION.md
+
+
+
+---
+
+8. Languages
+
+English is the canonical language for this repo.
+Mirrored READMEs are provided for accessibility:
+
+🇺🇸 English – README.md (this file)
+
+🇸🇦 Arabic – README_AR.md
+
+🇫🇷 French – README_FR.md
+
+🇪🇸 Spanish – README_ES.md
+
+
+
+---
+
+9. Contribution Guidelines
+
+Before opening an Issue or PR:
+
+1. Read CONTRIBUTING.md
+
+
+2. Use the appropriate Issue template:
+
+🐞 Bug report
+
+✨ Feature request
+
+📚 Documentation task
+
+
+
+3. Always link issues in your PR (Fixes #123)
+
+
+4. Follow the PR template: PULL_REQUEST_TEMPLATE.md
+
+
+
+
+---
+
+10. Security & Code of Conduct
+
+🔐 Security policy: SECURITY.md
+
+🤝 Code of Conduct: CODE_OF_CONDUCT.md
+
+
+Security issues should be reported privately to:
+📧 aya@quietwire.ai
+
+
+---
+
+11. Status & Ownership
+
+Repository Type: Canon / Governance / Documentation
+
+Status: Active – under continuous improvement
+
+Owner / Maintainer: Eng. Aya Jamal (with guidance from Ashraf Al-Haj)
+
+
+This repo is the source of truth for how QuietWire uses GitHub.
+All future repos, templates, and AI workflows should align with this spec.
