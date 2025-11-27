@@ -1,117 +1,113 @@
+Cover](file_00000000267c71f5aaea483a32ccc534.png)
 
-# Plateforme de Gestion des Dépôts GitHub  
-## QuietWire / Civic AI Canon
+# QuietWire / Civic AI Canon  
+## Plateforme de Gestion des Dépôts GitHub
 
-> Rédigé par : **Ing. Aya Jamal – Programme d’Apprentissage QuietWire**  
-> Avec le support de : **Athena (Agent IA)**
-
----
-
-## 🌐 Langues
-- 🇺🇸 Anglais – fichier principal (`README.md`)
-- 🇸🇦 Arabe – `README_AR.md`
-- 🇫🇷 Français – ce fichier (`README_FR.md`)
-- 🇪🇸 Espagnol – `README_ES.md` (optionnel)
+**Auteur :** Eng. Aya Jamal (Apprentissage – QuietWire)  
+**Support :** Athena (Assistant IA)  
+**Email :** aya@quietwire.ai  
 
 ---
 
-## 1. Aperçu Général
+## 1. Objectif
 
 Ce dépôt définit la **Plateforme de Gestion des Dépôts GitHub** pour :
 
 - QuietWire  
 - CAP  
 - Civic AI Canon  
-- Et d'autres projets internes similaires
+- Projets internes et d'apprentissage  
 
-Il fournit une architecture complète pour :
+Cette plateforme est :
 
-- La classification des dépôts (Product, Canon, KB, Infra…)  
-- Les règles de gouvernance (branches, Issues, PRs, releases)  
-- L’intégration avec les agents IA (Athena, Queen Bee, Raasid)  
-- La liaison GitHub → CAP → Ledger pour la preuve et la traçabilité  
-- Les modèles standardisés et les checklists  
-- Une feuille de route pour appliquer la norme à tous les dépôts  
-
----
-
-## 2. Structure du Dépôt
-
-/ ├── README.md ├── README_AR.md ├── README_FR.md ├── SRS_GitHub_Repository_Management_Platform.md ├── REPO_TEMPLATES_AND_CHECKLISTS.md ├── GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md ├── AI_INTEGRATION_PROTOCOL.md ├── ATTESTATION_INTEGRATION_GUIDE.md └── QUIETWIRE_REPO_MANAGEMENT_IMPLEMENTATION_ROADMAP.md
+- Une taxonomie structurée de dépôts  
+- Des règles de gouvernance complètes  
+- Une intégration IA avancée  
+- Un modèle d’attestation relié au CAP / Ledger  
+- Un plan de travail dirigé par Aya + Athena  
 
 ---
 
-## 3. Public Cible
+## 2. Liens Rapides
 
-Cette plateforme est destinée à :
+- 📜 **Spécification SRS**  
+  [`SRS_GitHub_Repository_Management_Platform.md`](./SRS_GitHub_Repository_Management_Platform.md)
 
-- **Architecte Système / Archiviste Principal**  
-  (Ashraf — autorité finale pour les normes)
+- 🧭 **Feuille de Route d’Implémentation**  
+  [`QUIETWIRE_REPO_MANAGEMENT_IMPLEMENTATION_ROADMAP.md`](./QUIETWIRE_REPO_MANAGEMENT_IMPLEMENTATION_ROADMAP.md)
 
-- **Développeurs principaux / Mainteneurs**  
-  Responsables de la conformité et des révisions
+- 🧩 **Modèles & Checklists**  
+  [`REPO_TEMPLATES_AND_CHECKLISTS.md`](./REPO_TEMPLATES_AND_CHECKLISTS.md)
 
-- **Contributeurs & Stagiaires**  
-  Y compris : *Ing. Aya Jamal*
+- 🏛️ **Playbook de Gouvernance**  
+  [`GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md`](./GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md)
 
-- **Agents IA**  
-  Athena / Queen Bee / Raasid  
-  - Lecture des dépôts  
-  - Analyse de la structure  
-  - Génération de documentation  
-  - Production des attestations
+- 🤖 **Protocole d’Intégration IA**  
+  [`AI_INTEGRATION_PROTOCOL.md`](./AI_INTEGRATION_PROTOCOL.md)
 
----
-
-## 4. Comment Utiliser ce Dépôt
-
-1. Commencer avec :  
-   **SRS_GitHub_Repository_Management_Platform.md**
-
-2. Continuer avec :  
-   **REPO_TEMPLATES_AND_CHECKLISTS.md**
-
-3. Appliquer les règles de gouvernance via :  
-   **GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md**
-
-4. Intégration IA :  
-   **AI_INTEGRATION_PROTOCOL.md**
-
-5.’intégration CAP / Ledger :  
-   **ATTESTATION_INTEGRATION_GUIDE.md**
-
-6. Mise en œuvre :  
-   **QUIETWIRE_REPO_MANAGEMENT_IMPLEMENTATION_ROADMAP.md**
+- 🪪 **Guide d’Attestation**  
+  [`ATTESTATION_INTEGRATION_GUIDE.md`](./ATTESTATION_INTEGRATION_GUIDE.md)
 
 ---
 
-## 5. Relation avec Canon / CAP / Ledger
+## 3. Rôle du Dépôt
 
-Cette plateforme définit :
+Ce dépôt est la **source de vérité** pour :
 
-- Les standards structurels des dépôts  
-- La traçabilité des modifications  
-- Les liens entre GitHub, CAP et le Ledger  
-- Une architecture adaptée aux agents IA  
-
----
-
-## 6. Responsabilité & Gestion
-
-**Mainteneur Principal :**  
-Ing. Aya Jamal  
-📧 Email : aya@quietwire.ai
-
-**Architecte Responsable :**  
-Ashraf – System Architect / Master Archivist
+- L’organisation des dépôts  
+- Les règles de documentation  
+- Les workflows GitHub Actions  
+- L’utilisation des agents IA dans GitHub  
+- Le lien entre Releases, CAP Events et Ledger  
 
 ---
 
-## 7. Améliorations Futures
+## 4. Structure
 
-- Validation automatique de la structure des dépôts  
-- Diagrammes architecturaux  
-- Documentation multilingue  
-- Amélioration des flux CAP / Ledger  
+(la même arborescence que README anglais)
 
 ---
+
+## 5. Gouvernance & Workflows
+
+- Stratégie de branches  
+- Règles PR  
+- Modèles d’issues  
+- Conventions de versionnage  
+- Rôles et permissions  
+
+Workflows actifs :
+
+- `ci.yml`, `codeql.yml`, `markdown-lint.yml`, `repo-sync.yml`
+
+---
+
+## 6. IA & Attestation
+
+- Rôles d'Athena, Queen Bee, Raasid  
+- Lecture IA des dépôts  
+- Attestations liées aux releases CAP / Ledger  
+
+---
+
+## 7. Langues
+
+- 🇺🇸 Anglais — Canonique  
+- 🇸🇦 Arabe  
+- 🇫🇷 Français — Ce fichier  
+- 🇪🇸 Espagnol  
+
+---
+
+## 8. Sécurité & Conduite
+
+- Politique Sécurité : `SECURITY.md`  
+- Code de Conduite : `CODE_OF_CONDUCT.md`
+
+---
+
+## 9. Statut
+
+- Type : Canon / Documentation  
+- Statut : Actif  
+- Mainteneur : Eng. Aya Jamal
