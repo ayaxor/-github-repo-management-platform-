@@ -1,5 +1,5 @@
 
-markdown
+
 # Governance & Workflow Playbook  
 ## QuietWire / Civic AI Canon – GitHub Repository Management Platform
 
