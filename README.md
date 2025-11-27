@@ -1,5 +1,9 @@
 
 <div align="center">
+  <img src="https://raw.githubusercontent.com/ayaxor/-github-repo-management-platform-/main/file_00000000267c71f5aaea483a32ccc534.png" alt="QuietWire Cover" width="100%" />
+</div>
+
+<div align="center">
 
 # ⚡️ QuietWire / Civic AI Canon  
 ## **GitHub Repository Management Platform**
