@@ -8,6 +8,19 @@ Enterprise Repository Management Platform
 </p>
 ---
 
+<p align="center">
+
+  <img src="https://img.shields.io/badge/QuietWire-Architecture-2c3e50?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/badge/Civic%20AI%20Canon-Ledger%20Integrated-8e44ad?style=for-the-badge&logo=data" />
+  <img src="https://img.shields.io/badge/AI%20Agents-Athena%20%7C%20QueenBee%20%7C%20Raasid-6c5ce7?style=for-the-badge&logo=ai" />
+  <img src="https://img.shields.io/badge/Workflows-CI%2FCD%20Verified-27ae60?style=for-the-badge&logo=check" />
+  <img src="https://img.shields.io/badge/Security-Attestation%20Ready-e67e22?style=for-the-badge&logo=shield" />
+  <img src="https://img.shields.io/badge/Governance-Enterprise%20Standards-c0392b?style=for-the-badge&logo=code" />
+
+</p>
+
+
+---
 Enterprise Domains
 
 QUIETWIRE     |   GOVERNANCE     |   CANON STANDARDS  
