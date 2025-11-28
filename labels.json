@@ -1,0 +1,13 @@
+
+[
+  {"name": "type:feature", "color": "1f8b4c"},
+  {"name": "type:bug", "color": "d73a4a"},
+  {"name": "type:documentation", "color": "0e8a16"},
+  {"name": "status:in-progress", "color": "fbca04"},
+  {"name": "status:blocked", "color": "d93f0b"},
+  {"name": "status:review", "color": "0366d6"},
+  {"name": "ai:athena", "color": "9b59b6"},
+  {"name": "ai:queenbee", "color": "6f42c1"},
+  {"name": "priority:high", "color": "b60205"},
+  {"name": "good first issue", "color": "7057ff"}
+]
