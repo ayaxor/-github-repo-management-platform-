@@ -1,0 +1,24 @@
+================
+#        QuietWire CODEOWNERS
+#   GitHub Repository Management Platform
+# =======================================
+
+# Primary Repository Owner (Full Authority)
+* @ayaxor
+
+# ---------------------------------------
+# Final Reviewer – System Architect
+# هذا اسم مؤقت وسيتم تغييره لاحقاً
+# ---------------------------------------
+/docs/ @Ashraf
+/SRS_GitHub_Repository_Management_Platform.md @Ashraf
+/GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md @Ashraf
+/AI_INTEGRATION_PROTOCOL.md @Ashraf
+/ATTESTATION_INTEGRATION_GUIDE.md @Ashraf
+/QUIETWIRE_WORKFLOWS_DOCUMENTATION.md @Ashraf
+
+# ---------------------------------------
+# Optional future reviewers (if needed)
+# /src/ @team-member
+# /configs/ @team-member
+
