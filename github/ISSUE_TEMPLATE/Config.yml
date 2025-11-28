@@ -1,0 +1,10 @@
+
+blank_issues_enabled: false
+contact_links:
+  - name: 📘 QuietWire Documentation
+    url: https://github.com/ayaxor/-github-repo-management-platform-/tree/main/docs
+    about: Read the full documentation before opening an issue.
+  - name: 🛡 Security Report
+    url: mailto:aya@quietwire.ai
+    about: Report critical security issues privately.
+
