@@ -5,181 +5,197 @@
 GitHub Repository Management Platform
 
 <div align="center">
-  <img src="assets/file_0000000267c7f15a...png" width="85%">
+  <img src="file_00000000267c71f5aaea483a32ccc534.png" width="85%">
 </div>
 ---
 
-<div align="center">QuietWire	Governance	Workflows	Enterprise	AI	Athena	Attestation	Ledger
+<div align="center">Operational Domains
 
-🟪 QUIETWIRE	⚫ GOVERNANCE	🔵 WORKFLOWS	🟦 ENTERPRISE	🟣 AI	💜 ATHENA	🟧 ATTEST	🟠 LEDGER
+QuietWire	Governance	Workflows	Enterprise	AI	Athena	Attestation	Ledger
+
+🟪	⚫	🔵	🟦	🟣	💜	🟧	🟠
 
 
 </div>
 ---
 
-👥 Official Engineering Team
+👥 Engineering Authority
 
 👩‍💻 Eng. Aya Jamal — Lead Maintainer
 
-🧑‍💻 Eng. Ashraf Al-Haj — System Architect
+🧑‍💻 Eng. Ashraf Al-Haj — System Architect / Master Archivist
 
 🧑‍💼 Chris Blask — Executive Advisor
 
 
 ---
 
-1. Overview
+🧭 1. Overview
 
-This repository represents the complete Enterprise Repository Management Platform for QuietWire and Civic AI Canon.
+This repository provides the complete enterprise-grade GitHub Repository Management Platform used across:
 
-It includes:
+QuietWire
 
-Architecture
+Civic AI Canon
 
-Governance
+CAP / Ledger Systems
 
-Repo templates
-
-CI/CD Workflows
-
-AI Agent Integration
-
-Attestation & Evidence
-
-CAP → Ledger mapping
-
-Full documentation under docs/
+Enterprise AI Pipelines
 
 
+The platform ensures:
 
----
+Canon-aligned architecture
 
-2. Full Lifecycle Workflow (MEGA Diagram)
+Full documentation standards
 
-──────────────────────────────────────────────────────────────────────────────
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ QUIETWIRE DEVELOPMENT FLOW
-──────────────────────────────────────────────────────────────────────────────
+Governance enforcement
 
-                                      ▼
-                          ╔════════════════════╗
-                          ║ 1. CREATE ISSUE    ║
-                          ║ Feature / Bug / EPIC║
-                          ╚════════════════════╝
-                                      ▼
-                          ╔════════════════════════════════╗
-                          ║ 2. ASSIGN + LABEL + ACCEPTANCE ║
-                          ║   Criteria + Milestone         ║
-                          ╚════════════════════════════════╝
-                                      ▼
-                          ╔════════════════════════════════╗
-                          ║ 3. CREATE FEATURE BRANCH       ║
-                          ║    feature/<short-name>        ║
-                          ╚════════════════════════════════╝
-                                      ▼
-                          ╔═══════════════════════════════════════════╗
-                          ║ 4. DEVELOPMENT + AI ASSIST                ║
-                          ║ Athena → scans docs / tests / gaps        ║
-                          ║ Suggests improvements via PR comments     ║
-                          ╚═══════════════════════════════════════════╝
-                                      ▼
-                          ╔════════════════════════════════╗
-                          ║ 5. OPEN PULL REQUEST           ║
-                          ║ Reviewer 1: Aya                ║
-                          ║ Reviewer 2: Ashraf             ║
-                          ╚════════════════════════════════╝
-                                      ▼
-                          ╔════════════════════════════════╗
-                          ║ 6. CI / TEST PIPELINES MUST PASS║
-                          ║ Lint • Build • Tests • Security ║
-                          ╚════════════════════════════════╝
-                                      ▼
-                          ╔════════════════════════════════╗
-                          ║ 7. MERGE INTO MAIN (Protected) ║
-                          ╚════════════════════════════════╝
-                                      ▼
-                          ╔═══════════════════════════════════════════╗
-                          ║ 8. CREATE RELEASE + EXPORT EVIDENCE       ║
-                          ║ Logs • SBOM • Reports • Test Artifacts    ║
-                          ╚═══════════════════════════════════════════╝
-                                      ▼
-                          ╔═══════════════════════════════════════════╗
-                          ║ 9. CAP EVENT GENERATED                    ║
-                          ╚═══════════════════════════════════════════╝
-                                      ▼
-                          ╔═══════════════════════════════════════════╗
-                          ║ 10. LEDGER ATTESTATION ENTRY (Raasid)     ║
-                          ╚═══════════════════════════════════════════╝
+Attestation integrity
 
-──────────────────────────────────────────────────────────────────────────────
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ END OF WORKFLOW — FULL TRACEABILITY ENABLED
-──────────────────────────────────────────────────────────────────────────────
-
-
----
-
-3. AI Integration Flow
-
-──────────────────────────────────────────────────────
-                  AI AGENT OPERATIONAL FLOW
-──────────────────────────────────────────────────────
-                        ▼
-      Athena scans repo structure & documentation
-                        ▼
-   Detects missing docs • tests • inconsistencies
-                        ▼
-     Generates suggestions & opens PR (no commits)
-                        ▼
-   Raasid collects evidence → logs • SBOM • artifacts
-                        ▼
-     CAP event created → Ledger attestation entry
-──────────────────────────────────────────────────────
-
-
----
-
-4. Governance Rules (Strict Mode)
-
-main → protected
-
-PR must reference Issue
-
-Required reviewers: Aya + Ashraf
-
-CI must pass
-
-No direct commits to main
+AI integration flows (Athena, Raasid, Worker Bots)
 
 
 
 ---
 
-5. Security
+🏗️ 2. Core Architecture (ASCII High-Level Diagram)
 
-Use GitHub Secrets
+──────────────────────────────────────────────────────────────────────────
+                       QUIETWIRE REPOSITORY PLATFORM
+──────────────────────────────────────────────────────────────────────────
 
-Never commit tokens
+                Source Zone │ Config │ Modules
+                                   ↓
+                         Documentation Zone
+           (Architecture │ Repo Structure │ Evidence Spec)
+                                   ↓
+                             Automation Zone
+       (.github/workflows → CI │ Security │ Lint │ Attestation)
+                                   ↓
+                             Attestation Zone
+      (Evidence │ Events │ Ledger — CAP Export Integration)
+──────────────────────────────────────────────────────────────────────────
+
+
+---
+
+🔁 3. Full Lifecycle Development Workflow
+
+────────────────────────────────────────────────────────────
+                  QUIETWIRE DEVELOPMENT FLOW
+────────────────────────────────────────────────────────────
+
+  Create Issue (Feature / Bug)
+                ↓
+  Assign + Labels + Acceptance Criteria
+                ↓
+  Create Feature Branch (feature/<name>)
+                ↓
+  Development + AI Assistance (Athena)
+                ↓
+  Open Pull Request
+     Reviewer 1: Aya
+     Reviewer 2: Ashraf
+                ↓
+  CI Pipeline Must Pass
+                ↓
+  Merge into Main (Protected Branch)
+                ↓
+  Create Release + Evidence Export (CI + SBOM)
+                ↓
+  CAP Event Created → Ledger Entry (Attestation)
+────────────────────────────────────────────────────────────
+
+
+---
+
+🤖 4. AI Agent Operational Workflow
+
+─────────────────────────────────────────────
+                AI OPERATIONAL FLOW
+─────────────────────────────────────────────
+
+Athena scans repository structure
+↓
+Finds missing docs / tests / labels
+↓
+Generates suggestions (patterns, fixes)
+↓
+Opens Pull Request (never pushes to main)
+↓
+Raasid collects CI evidence:
+  - SBOM
+  - Test results
+  - Build artifacts
+  - PR approvals
+↓
+CAP → Ledger Attestation Entry
+─────────────────────────────────────────────
+
+
+---
+
+🛡️ 5. Governance Rules (Strict Mode)
+
+Area	Rule
+
+Branching	main is protected — no direct commits
+PR Requirements	Issue required + CI must pass
+Reviewers	Aya + Ashraf for critical repos
+Labels	Standardized via labels.json
+Security	No secrets committed — use GitHub Secrets
+
+
+
+---
+
+📁 6. Repository Structure
+
+/
+├── docs/
+│   ├── ARCHITECTURE.md
+│   ├── GOVERNANCE.md
+│   ├── WORKFLOW_OVERVIEW.md
+│   ├── ATT. INTEGRATION + MODELS
+│   └── ...
+├── .github/
+│   └── workflows/
+│        ├── ci.yml
+│        ├── lint.yml
+│        └── security.yml
+├── assets/
+│   └── diagrams + images
+└── Core Documentation Files (.md)
+
+
+---
+
+🔐 7. Security Standards
 
 Follow SECURITY.md
 
+Never commit tokens or secrets
 
+Use GitHub Access Controls
 
----
+Maintain branch protection
 
-6. Repository Structure
+Follow incident response workflow
 
-Located inside:
-docs/
-.github/workflows/
-assets/
 
 
 ---
 
-7. Maintainers
+🧾 8. Maintainers
 
-Eng. Aya Jamal
-Eng. Ashraf Al-Haj
-Chris Blask
+👩‍💻 Eng. Aya Jamal – Lead Maintainer
+
+🧑‍💻 Eng. Ashraf Al-Haj – System Architect
+
+🧑‍💼 Chris Blask – Executive Advisor
+
 
 
 ---
+
