@@ -1,11 +1,9 @@
 
----
-
 # 🚀 QuietWire / Civic AI Canon  
-### **GitHub Repository Management Platform**
+## **GitHub Repository Management Platform**
 
 <p align="center">
-  <img src="YOUR_IMAGE_LINK_HERE" width="80%" />
+  <img src="https://raw.githubusercontent.com/ayaxor/-github-repo-management-platform-/main/file_00000000267c71f5aaea483a32ccc534.png" width="85%" />
 </p>
 
 ---
@@ -16,8 +14,8 @@
 <tr>
 <td align="center"><b>🟪 QUIETWIRE</b></td>
 <td align="center"><b>⚫ GOVERNANCE</b></td>
-<td align="center"><b>🟦 WORKFLOWS</b></td>
-<td align="center"><b>🟩 ENTERPRISE</b></td>
+<td align="center"><b>🔵 WORKFLOWS</b></td>
+<td align="center"><b>🟦 ENTERPRISE</b></td>
 <td align="center"><b>🟣 AI</b></td>
 <td align="center"><b>💜 ATHENA</b></td>
 <td align="center"><b>🟧 ATTEST</b></td>
@@ -37,103 +35,167 @@
 
 # 🥇 1. Overview
 
-This repository represents the complete enterprise-grade GitHub Repository Management Platform used across:
+This repository represents the full **Enterprise GitHub Repository Management Platform** used across:
 
 - QuietWire  
 - Civic AI Canon  
 - CAP / Ledger  
 - Athena AI Agents  
-- Enterprise Governance Workflows  
 
-**This platform ensures:**
-- Repository consistency  
-- Standards alignment  
-- Attestation & evidence lifecycle  
-- Multi-agent automation  
-- Governance compliance  
-- Secure workflow operations  
+It provides:
 
----
-
-# 🧩 2. Repository Architecture (High-Level)
-
-QuietWire Repository │ ├── Source Zone (src/, modules/, config/) │ ├── Documentation Zone (docs/, ARCHITECTURE.md,…) │ ├── Automation Zone (.github/workflows/) │ └── Attestation Zone (attestations/, events/, ledger/)
+- Architecture standards  
+- Governance rules  
+- Workflow diagrams  
+- Repo structure & templates  
+- Attestation + evidence lifecycle  
+- Secure CI/CD  
+- AI integration workflows  
+- Multilingual documentation  
 
 ---
 
-# 🛠️ 3. Development Workflow (ASCII)
+# 🏛 2. Architecture Overview (ASCII)
 
-Development Flow ↓ Create Issue (Feature / Bug) ↓ Assign + Labels + Acceptance Criteria ↓ Create Feature Branch: feature/<name> ↓ AI Assistance (Athena → tests / docs / suggestions) ↓ Open Pull Request Reviewer 1: Aya Reviewer 2: Ashraf ↓ Continuous Integration (CI) ↓ Merge Into Main (Protected) ↓ Create Release + Evidence Export ↓ CAP Event → Ledger Entry
-
----
-
-# 📁 4. Repository Contents
-
-- ARCHITECTURE.md  
-- GOVERNANCE_MATRIX.md  
-- SECURITY_MODEL.md  
-- AI_AGENTS.md  
-- ATTTESTATION_MODEL.md  
-- WORKFLOW_OVERVIEW.md  
-- REPO_STRUCTURE.md  
-- CODE_OF_CONDUCT.md  
-- CONTRIBUTING.md  
-- OPERATIONS_GUIDE.md  
-- QUALITY_ASSURANCE.md  
-- RELEASE_PROCESS.md  
-- RISK_MATRIX.md  
-- VERSION.md  
-- MULTILINGUAL READMEs (AR/FR/ES)
+QuietWire Repository Platform │ ├── Documentation Zone (docs/) │ ├── Automation Zone (.github/workflows/) │ ├── AI Agent Zone (Athena / Raasid / QueenBee) │ └── Attestation Zone (events → CAP → Ledger)
 
 ---
 
-# 🧪 5. CI/CD & Automation
+# 🔁 3. Development Workflow (Mermaid)
 
-.github/workflows/ ├── ci.yml ├── lint.yml ├── security.yml └── attest.yml
+```mermaid
+flowchart TD
+    A[Create Issue (Feature / Bug)] --> B[Assign + Labels + Acceptance Criteria]
+    B --> C[Create Feature Branch (feature/<name>)]
+    C --> D[Development + AI Assistance (Athena)]
+    D --> E[Open Pull Request]
+    E --> F{Reviewers<br>Aya + Ashraf}
+    F --> G[CI Pipeline Must Pass]
+    G --> H[Merge into Main (Protected)]
+    H --> I[Create Release + Evidence Export]
+    I --> J[CAP Event → Ledger Entry]
 
-Each workflow performs:
-
-- Linting  
-- Security validation  
-- Attestation export  
-- Evidence collection  
-- Automated documentation refresh  
-
----
-
-# 🔐 6. Security & Evidence
-
-- All commits signed  
-- Evidence exported to ledger  
-- Automated attestation from AI agents  
-- CAP lifecycle events  
-- Secure governance boundaries  
 
 ---
 
-# 📄 7. Licensing
+🔁 4. Development Workflow (ASCII)
 
-This project is under the MIT License.
+Create Issue (Feature/Bug)
+        ↓
+Assign + Labels + Acceptance Criteria
+        ↓
+Create Feature Branch (feature/<name>)
+        ↓
+AI Assistance (Athena)
+        ↓
+Open Pull Request
+Reviewers: Aya + Ashraf
+        ↓
+CI Pipeline Must Pass
+        ↓
+Merge into Main (Protected)
+        ↓
+Create Release + Evidence Export
+        ↓
+CAP Event → Ledger Entry
+
 
 ---
 
-# 🌍 8. Multilingual Documentation
+📦 5. Repository Contents
 
-- 🇬🇧 English  
-- 🇸🇦 Arabic  
-- 🇫🇷 French  
-- 🇪🇸 Spanish  
+/docs
+  ARCHITECTURE.md
+  GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md
+  AI_INTEGRATION_PROTOCOL.md
+  ATTESTATION_INTEGRATION_GUIDE.md
+  REPO_TEMPLATES_AND_CHECKLISTS.md
+  WORKFLOW_OVERVIEW.md
+
+/.github/workflows
+  ci.yml
+  lint.yml
+  security.yml
+  attest.yml
+
+assets/
+  diagrams + images
+
 
 ---
 
-# 🏁 Final Notes
+🤖 6. AI Agent Integration
 
-This repository represents the **official engineering standard** for:  
-**QuietWire • Civic AI Canon • CAP • Athena AI • Governance Workflows**
+Athena
 
-Maintained with excellence by  
-**Eng. Aya Jamal** ✨  
+Documentation intelligence, PR assistance, structure analysis.
+
+Raasid
+
+Evidence extraction, SBOM, attestation packaging.
+
+QueenBee
+
+Global orchestration and cross-repo intelligence.
+
+Worker Bots
+
+Automation (linting, testing, formatting).
+
 
 ---
 
+🛡 7. Security
+
+Protected main branch
+
+GitHub Secrets only
+
+No direct commits
+
+Attestation required
+
+Security workflow enforced
+
+
+
+---
+
+🧪 8. Quality Assurance
+
+Code review guidelines
+
+Testing strategy
+
+Quality standards
+
+CI pipelines
+
+
+
+---
+
+🌍 9. Multi-Language Documentation
+
+README_AR.md
+
+README_FR.md
+
+README_ES.md
+
+
+
+---
+
+👩‍💻 Maintainer
+
+Eng. Aya Jamal
+📧 aya@quietwire.ai
+
+
+---
+
+📜 License
+
+MIT License — see LICENSE.
 
