@@ -9,20 +9,16 @@
 ---
 
 ## 🧭 Operational Domains
+img src="https://img.shields.io/badge/QuietWire-Architecture-8e44ad?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Governance-Standards-2c3e50?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Workflows-CI/CD-2980b9?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Enterprise-Docs-3498db?style=for-the-badge" />
+<img src="https://img.shields.io/badge/AI-Systems-9b59b6?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Athena-Assistant-8e44ad?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Attestation-Events-f39c12?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Ledger-Integrity-e67e22?style=for-the-badge" />
 
-<table>
-<tr>
-<td align="center"><b>🟪 QUIETWIRE</b></td>
-<td align="center"><b>⚫ GOVERNANCE</b></td>
-<td align="center"><b>🔵 WORKFLOWS</b></td>
-<td align="center"><b>🟦 ENTERPRISE</b></td>
-<td align="center"><b>🟣 AI</b></td>
-<td align="center"><b>💜 ATHENA</b></td>
-<td align="center"><b>🟧 ATTEST</b></td>
-<td align="center"><b>🟠 LEDGER</b></td>
-</tr>
-</table>
-
+<
 ---
 
 ## 👥 Engineering Authority
@@ -32,6 +28,8 @@
 - 👨‍💼 **Chris Blask** — Executive Advisor  
 
 ---
+
+
 
 # 🥇 1. Overview
 
