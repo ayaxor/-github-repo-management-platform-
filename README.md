@@ -4,25 +4,19 @@
 
 GitHub Repository Management Platform
 
-<div align="center">
-  <img src="file_00000000267c71f5aaea483a32ccc534.png" width="85%">
-</div>
+<p align="center">
+  <img src="file_00000000267c71f5aaea483a32ccc534.png" width="90%">
+</p>
 ---
 
-<div align="center">Operational Domains
+🔷 Operational Domains
 
-<table>
-  <tr>
-    <td><img src="https://via.placeholder.com/20/8e44ad/FFFFFF?text=+" /> <b>QUIETWIRE</b></td>
-    <td><img src="https://via.placeholder.com/20/2c3e50/FFFFFF?text=+" /> <b>GOVERNANCE</b></td>
-    <td><img src="https://via.placeholder.com/20/2980b9/FFFFFF?text=+" /> <b>WORKFLOWS</b></td>
-    <td><img src="https://via.placeholder.com/20/3498db/FFFFFF?text=+" /> <b>ENTERPRISE</b></td>
-    <td><img src="https://via.placeholder.com/20/9b59b6/FFFFFF?text=+" /> <b>AI</b></td>
-    <td><img src="https://via.placeholder.com/20/8e44ad/FFFFFF?text=+" /> <b>ATHENA</b></td>
-    <td><img src="https://via.placeholder.com/20/f39c12/FFFFFF?text=+" /> <b>ATTEST</b></td>
-    <td><img src="https://via.placeholder.com/20/e67e22/FFFFFF?text=+" /> <b>LEDGER</b></td>
-  </tr>
-</table></div>
+<p align="center">QUIETWIRE	GOVERNANCE	WORKFLOWS	ENTERPRISE	AI	ATHENA	ATTEST	LEDGER
+
+🟪	⚫	🔵	🔷	🟣	💜	🟧	🟠
+
+
+</p>
 ---
 
 👥 Engineering Authority
@@ -34,186 +28,157 @@ GitHub Repository Management Platform
 👨‍💼 Chris Blask — Executive Advisor
 
 
+
 ---
 
-🥇 1. Overview
+🔎 1. Overview
 
-This repository delivers the enterprise-level GitHub Repository Management Platform powering:
+This repository delivers the enterprise-grade GitHub Repository Management Platform used across:
 
 QuietWire
 
 Civic AI Canon
 
-CAP / Ledger Integration
+CAP Attestation
 
-AI Ops & Attestation Workflows
+AI Agent Workflows
 
 
-It includes:
+Includes:
 
 Architecture
 
-Governance
+Governance rules
+
+Workflow diagrams
 
 Repo templates
 
-CI/CD workflows
-
-Attestation model
+Attestation + evidence model
 
 AI integration (Athena / Raasid / QueenBee)
 
-Evidence export
+Security workflows
 
-Multi-language documentation
+Full multi-language documentation
 
-
-
----
-
-🏗️ 2. Architecture Overview
-
-Repository Layer
-   ↓
-Documentation & Standards Layer
-   ↓
-Automation Layer (.github/workflows)
-   ↓
-AI Agent Interaction Layer
-   ↓
-Attestation Layer → CAP → Ledger Entry
 
 
 ---
 
-📚 3. Repository Structure
+🏛 2. Architecture (ASCII)
 
-/docs
-  ARCHITECTURE.md
-  GOVERNANCE_AND_WORKFLOW_PLAYBOOK.md
-  AI_INTEGRATION_PROTOCOL.md
-  ATTESTATION_INTEGRATION_GUIDE.md
-  REPO_TEMPLATES_AND_CHECKLISTS.md
-  WORKFLOW_OVERVIEW.md
-
-/.github/workflows
-  ci.yml
-  lint.yml
-  security.yml
-
-assets/
-  images + diagrams
+QuietWire Repository
+        │
+        │── Docs / Standards
+        │
+        │── Automation (.github/workflows)
+        │
+        │── AI Agents (Athena / Raasid / QueenBee)
+        │
+        └── Attestation → CAP → Ledger
 
 
 ---
 
-🔁 4. Enterprise Workflow Diagram (Mermaid)
+🔁 3. Full Workflow (Mermaid Diagram)
 
 flowchart TD
-    A[📌 Create Issue<br>(Feature / Bug)] --> B[🏷 Assign Contributor<br>+ Labels + Acceptance Criteria]
-    B --> C[🌿 Create Feature Branch<br>feature/<name>]
-    C --> D[🤖 Development + AI Assistance<br>Athena checks / suggestions]
-    D --> E[🔀 Open Pull Request]
-    E --> F{👥 Reviewers<br>Aya + Ashraf}
-    F --> G[🧪 CI Pipeline Must Pass]
-    G --> H[🔒 Merge into Main<br>(Protected)]
-    H --> I[📦 Create Release + Evidence Export]
-    I --> J[🟧 CAP Event → 🟠 Ledger Entry]
+    A[Create Issue (Feature/Bug)] --> B[Assign + Labels + Acceptance Criteria]
+    B --> C[Create Feature Branch (feature/<name>)]
+    C --> D[Development + AI Assistance (Athena)]
+    D --> E[Open Pull Request]
+    E --> F{Reviewers<br>Aya + Ashraf}
+    F --> G[CI Pipeline Must Pass]
+    G --> H[Merge into Main (Protected)]
+    H --> I[Create Release + Evidence Export]
+    I --> J[CAP Event → Ledger Entry]
 
 
 ---
 
-🔁 5. ASCII Workflow (GitHub-Native)
+🔁 4. ASCII Workflow (GitHub Native)
 
-───────────────────────────────────────────────
-             QuietWire Development Flow
-───────────────────────────────────────────────
-
-Create Issue (Feature / Bug)
-              ↓
-Assign Contributor + Labels + Acceptance Criteria
-              ↓
+Create Issue (Feature/Bug)
+        ↓
+Assign + Labels + Acceptance Criteria
+        ↓
 Create Feature Branch (feature/<name>)
-              ↓
-Development + AI Assistance (Athena)
-              ↓
+        ↓
+AI Assistance (Athena → tests/docs/suggestions)
+        ↓
 Open Pull Request
-              ↓
+        ↓
 Reviewers: Aya + Ashraf
-              ↓
+        ↓
 CI Pipeline Must Pass
-              ↓
+        ↓
 Merge into Main (Protected)
-              ↓
+        ↓
 Create Release + Evidence Export
-              ↓
+        ↓
 CAP Event → Ledger Entry
 
 
 ---
 
-🤖 6. AI Agent Integration
+🤖 5. AI Agent Integration
 
-🔹 Athena
+Athena: Documentation, PR suggestions, repo structure audits
 
-Documentation intelligence, PR suggestions, repo audits.
+QueenBee: Global orchestration, cross-repo decisions
 
-🔹 QueenBee
+Raasid: Evidence collection, attestation packaging
 
-Global orchestration, cross-repo intelligence.
+Worker Bots: Linting, tests, automation
 
-🔹 Raasid
-
-Evidence collection, test logs, attestation packaging.
-
-🔹 Worker Bots
-
-Linting, tests, automation.
 
 
 ---
 
-🛡️ 7. Security Model
+🛡 6. Security Rules
 
 No direct commits to main
 
-GitHub Secrets only
+Security workflows enforced
 
-Security workflow enforced
+All secrets via GitHub Secrets
 
-Attestation for every release
-
-
-
----
-
-🧪 8. Quality Assurance
-
-TESTING_STRATEGY.md
-
-QUALITY_ASSURANCE.md
-
-CODE_REVIEW_GUIDELINES.md
+Attestation required for release artifacts
 
 
 
 ---
 
-📄 9. Templates & Checklists
+🧪 7. Testing & QA
 
-REPO_TEMPLATES_AND_CHECKLISTS.md
+Testing strategy
 
-CONTRIBUTING.md
+QA framework
 
-OPERATIONS_GUIDE.md
-
-CODE_OF_CONDUCT.md
+Code review guidelines
 
 
 
 ---
 
-🌍 10. Multi-Language Docs
+📦 8. Templates & Standards
+
+Contributor guidelines
+
+Repo templates
+
+Governance matrix
+
+Operations guide
+
+Attestation model
+
+
+
+---
+
+🌍 9. Multi-Language Documentation
 
 README_AR.md
 
@@ -229,11 +194,3 @@ README_ES.md
 
 Eng. Aya Jamal
 📧 aya@quietwire.ai
-
-
----
-
-📜 License
-
-MIT License — see LICENSE.
-
