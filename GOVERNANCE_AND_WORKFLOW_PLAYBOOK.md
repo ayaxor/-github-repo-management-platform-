@@ -1,6 +1,5 @@
----
 
-<div align="center">⚡️ QuietWire – Governance & Workflow Playbook
+⚡ QUIETWIRE – WORKFLOW PLAYBOOK
 
 Enterprise Operational Workflows for GitHub Repository Management Platform
 
@@ -11,31 +10,29 @@ Reviewed by: Ashraf Al-Haj – System Architect / Master Archivist
 
 ---
 
-<img src="https://img.shields.io/badge/QuietWire-Governance-black?style=for-the-badge" />
+<div align="center"><img src="https://img.shields.io/badge/QuietWire-Governance-black?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Workflows-Enterprise-blue?style=for-the-badge" />
 <img src="https://img.shields.io/badge/AI_Integration-Athena-purple?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Attestation-Ledger-orange?style=for-the-badge" />
----
-
-</div>
+<img src="https://img.shields.io/badge/Attestation-Ledger-orange?style=for-the-badge" /></div>
 ---
 
 1. INTRODUCTION
 
 This playbook defines all operational workflows inside the QuietWire GitHub Repository Management Platform.
-It mirrors the architectural style, design quality, and process rigor used by enterprise-grade engineering teams.
 
-It provides:
+It ensures:
 
 Unified reference for maintainers & contributors
 
-Full lifecycle workflows (repo creation → branching → PR → review → release)
+Complete lifecycle workflows
 
-AI integration sequences (Athena / QueenBee / Raasid)
+AI integration (Athena, QueenBee, Raasid)
 
-Attestation flows (GitHub → CAP → Ledger)
+Governance enforcement
 
-Governance & compliance enforcement
+Attestation → CAP → Ledger sequence
+
+Enterprise-grade consistency
 
 
 
@@ -43,105 +40,60 @@ Governance & compliance enforcement
 
 2. WORKFLOW DIAGRAM – FULL LIFECYCLE
 
-> 🔥 هذا مخطط كامل (ASCII Diagram) مخصص يظهر 100% داخل GitHub بدون إضافات.
+🔥 Diagram (Mermaid — يظهر رسوميًا داخل GitHub)
 
-
-
-┌────────────────────────────────────────────┐
-│          QuietWire Development Flow        │
-└────────────────────────────────────────────┘
-                   │
-                   ▼
-         ┌───────────────────┐
-         │  Create Issue     │
-         │ (Feature / Bug)   │
-         └───────────────────┘
-                   │
-                   ▼
-     ┌──────────────────────────┐
-     │ Assign to contributor     │
-     │ Add labels + acceptance   │
-     │ criteria                  │
-     └──────────────────────────┘
-                   │
-                   ▼
-     ┌──────────────────────────┐
-     │ Create Feature Branch     │
-     │   feature/<name>          │
-     └──────────────────────────┘
-                   │
-                   ▼
-        ┌──────────────────────┐
-        │ Development + AI      │
-        │ assistance (Athena)   │
-        └──────────────────────┘
-                   │
-                   ▼
-        ┌──────────────────────┐
-        │   Open Pull Request   │
-        │   → Linked to Issue   │
-        └──────────────────────┘
-                   │
-                   ▼
-   ┌──────────────────────────────────────┐
-   │ Reviewer Flow (Ashraf + Aya + AI)    │
-   │ - Code Review                        │
-   │ - Docs Review                        │
-   │ - Governance Checks                  │
-   └──────────────────────────────────────┘
-                   │
-                   ▼
-     ┌──────────────────────────┐
-     │ Merge into main           │
-     │ (No direct commits)       │
-     └──────────────────────────┘
-                   │
-                   ▼
-        ┌──────────────────────┐
-        │ GitHub Release        │
-        │  + Evidence Export    │
-        └──────────────────────┘
-                   │
-                   ▼
-       ┌────────────────────────────┐
-       │ CAP Event Created           │
-       │ + Ledger Attestation Entry  │
-       └────────────────────────────┘
+flowchart TD
+    A[Create Issue<br>(Feature/Bug)] --> B[Assign to Contributor<br>Add Labels & Acceptance Criteria]
+    B --> C[Create Feature Branch<br>feature/<name>]
+    C --> D[Development + AI Assistance<br>(Athena)]
+    D --> E[Open Pull Request<br>Linked to Issue]
+    E --> F[Review Required<br>Ashraf + Aya + CI Checks]
+    F --> G[Merge to main<br>(No Direct Commits)]
+    G --> H[GitHub Release<br>+ Evidence Export]
+    H --> I[CAP Event Created<br>+ Ledger Attestation Entry]
 
 
 ---
 
 3. AI INTEGRATION WORKFLOW
 
-┌───────────────────────────────────────┐
-│        AI Agent Operational Flow      │
-└───────────────────────────────────────┘
+🔥 Mermaid Diagram
 
-Athena.role = "Documentation / Review"
-QueenBee.role = "Planning / Global State"
-Raasid.role = "Evidence / Ledger"
+sequenceDiagram
+    participant A as Athena (AI)
+    participant Q as QueenBee
+    participant R as Raasid (Ledger)
+    participant G as GitHub
 
-Workflow:
-1. Athena scans repo structure
-2. Detects missing docs / patterns
-3. Generates suggestions
-4. Creates PR (never commits directly)
-5. Raasid collects evidence from CI
-6. Ledger entry is created automatically
+    A->>G: Scan repo structure
+    A->>G: Detect missing docs / patterns
+    A->>G: Generate suggestions
+    A->>G: Create PR (never commits directly)
+    G->>R: Send CI evidence artifacts
+    R->>Ledger: Create attestation entry
+
+AI Roles
+
+Athena → Documentation / Review / Analysis
+
+QueenBee → Planning / Global State Tracking
+
+Raasid → Evidence / Attestation
+
 
 
 ---
 
 4. GOVERNANCE RULES (STRICT MODE)
 
-✔ Branching Rules
+✔ Branching Strategy
 
-main → production  
-develop → integration  
-feature/<name>  
-hotfix/<name>
+main      → production  
+develop   → integration  
+feature/  → new features  
+hotfix/   → urgent fixes
 
-✔ Pull Request Rules
+✔ Pull Request Policy
 
 Must reference an Issue
 
@@ -149,73 +101,70 @@ Requires 1–2 reviewers (Aya + Ashraf)
 
 CI must pass
 
-No commits directly to main
+No direct commits to main
 
 
-✔ Labels
-
-Use the included labels.json:
+✔ Labels (Auto-Loaded from labels.json)
 
 type:feature
-
 type:bug
-
 ai:athena
-
 priority:high
-
 status:blocked
-
 governance:review
-
 
 
 ---
 
-5. ATTESTATION & LEDGER WORKFLOW
+5. ATTESTATION WORKFLOW (GitHub → CAP → Ledger)
 
-GitHub Release → CAP Evidence File → Ledger Entry
+🔥 Mermaid Diagram
 
-Evidence components:
+flowchart TD
+    A[GitHub Release Created] --> B[Export Evidence<br>SBOM · Tests · Build Artifacts]
+    B --> C[CAP Event Created]
+    C --> D[Ledger Attestation Entry]
+
+Evidence Types
 
 SBOM
 
-Test results
+CI test results
 
 Build artifacts
 
-PR history
-
 Reviewer approvals
 
+PR history
 
-Raasid ensures traceability.
+
+Raasid ensures automated traceability.
 
 
 ---
 
 6. CONTRIBUTOR & MAINTAINER WORKFLOW
 
-Maintainer (Aya):
+Maintainer (Aya)
 
 Approves PRs
 
-Ensures templates followed
-
-Maintains repo structure
+Enforces templates
 
 Coordinates with AI agents
 
+Maintains repo structure
 
-System Architect (Ashraf):
+
+System Architect (Ashraf)
 
 Final reviewer
 
 Signs off critical updates
 
-Ensures Canon alignment
-
 Oversees attestation patterns
+
+Ensures Canon alignment
 
 
 
@@ -227,10 +176,18 @@ Use file: CHANGELOG.md
 
 Format:
 
-## v1.0 – Initial Release
-- Added repo templates
-- Added workflows
-- Added attestation integration
+v1.0 — Initial Release
+
+Added repo templates
+
+Added workflows
+
+Added attestation integration
+
+Added governance rules
+
+Added AI integration
+
 
 
 ---
@@ -243,7 +200,7 @@ Never commit secrets
 
 Use GitHub Secrets
 
-Only maintainers change protected branches
+Only maintainers modify protected branches
 
 
 
@@ -254,10 +211,10 @@ Only maintainers change protected branches
 This workflow playbook is now:
 
 ✔ Enterprise-grade
-✔ Ready for Public Release
-✔ Same standard used by Ashraf
+✔ Same design standard used by Ashraf
 ✔ Contains diagrams + flows + governance
-✔ Structured perfectly for AI agents
+✔ Fully structured for AI agents
+✔ Ready for public release
 
 
 ---
@@ -265,4 +222,7 @@ This workflow playbook is now:
 10. Maintainer
 
 Eng. Aya Jamal
-aya@quietwire.ai
+📧 aya@quietwire.ai
+
+
+---
