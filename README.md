@@ -1,6 +1,11 @@
 
 # GitHub Repo Management Platform – Concept by Aya (ayaxor)
 
+![QuietWire](https://img.shields.io/badge/QuietWire-Architecture-1c1c1c?style=for-the-badge)
+![Athena](https://img.shields.io/badge/AI%20Powered-Athena-6b21a8?style=for-the-badge)
+![Canon](https://img.shields.io/badge/Civic%20AI%20Canon-Ledger-f97316?style=for-the-badge)
+![Pro](https://img.shields.io/badge/Standards-Professional-65a30d?style=for-the-badge)
+
 This repository represents a **concept UI** for a GitHub Repository Management Platform, created by Aya (ayaxor) as part of her work with QuietWire.
 
 The idea is to move from only writing about “a platform” to showing a **visual concept** of how such a platform could look and feel.
