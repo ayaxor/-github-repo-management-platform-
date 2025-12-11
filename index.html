@@ -3,27 +3,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>GitHub Repo Management Platform – Aya</title>
+    <title>QuietWire GitHub Repo Management Platform – Aya</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Tailwind CDN -->
+    <!-- TailwindCSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- React + ReactDOM + Babel (so we can use JSX directly) -->
-    <script
-      src="https://unpkg.com/react@18/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-      crossorigin
-    ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
     <style>
-      
       body {
-        background: radial-gradient(circle at top, #020617, #020617 40%, #020617);
+        background: radial-gradient(circle at top, #020617, #020617 40%, #000);
       }
       .glass {
         background: rgba(15, 23, 42, 0.9);
@@ -36,296 +24,321 @@
     </style>
   </head>
   <body class="min-h-screen text-slate-100">
-    <div id="root"></div>
+    <div class="min-h-screen flex flex-col">
+      <!-- Top bar -->
+      <header
+        class="glass border-b border-slate-800 px-4 sm:px-8 py-4 flex items-center justify-between"
+      >
+        <div>
+          <p class="text-xs uppercase tracking-wide text-slate-500">
+            QuietWire · Internal Concept
+          </p>
+          <h1 class="text-xl sm:text-2xl font-semibold text-slate-50">
+            GitHub Repo Management Platform
+          </h1>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="text-right hidden sm:block">
+            <p class="text-xs text-slate-400">Signed in as</p>
+            <p class="text-sm font-semibold text-slate-100">Aya (ayaxor)</p>
+          </div>
+          <div
+            class="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-sm font-bold shadow-lg shadow-indigo-500/40"
+          >
+            A
+          </div>
+        </div>
+      </header>
 
-    <script type="text/babel">
-      const { useState } = React;
-
-      
-      const PrimaryButton = ({ children, onClick }) => (
-        <button
-          onClick={onClick}
-          className="px-4 py-2 rounded-xl text-sm font-semibold bg-indigo-500 hover:bg-indigo-400 active:bg-indigo-600 transition shadow-md shadow-indigo-500/30"
+      <!-- Main layout -->
+      <main class="flex-1 flex flex-col lg:flex-row">
+        <!-- Sidebar -->
+        <aside
+          class="glass border-r border-slate-800 w-full lg:w-64 p-5 flex flex-col gap-5"
         >
-          {children}
-        </button>
-      );
-
-      const StatCard = ({ label, value, hint }) => (
-        <div className="glass-soft rounded-2xl p-4 border border-slate-700 flex flex-col gap-1">
-          <span className="text-xs uppercase tracking-wide text-slate-400">
-            {label}
-          </span>
-          <span className="text-2xl font-bold text-slate-50">{value}</span>
-          {hint && (
-            <span className="text-xs text-slate-400">
-              {hint}
-            </span>
-          )}
-        </div>
-      );
-
-      const TemplateCard = ({ name, description, tags = [], onUse }) => (
-        <div className="glass-soft rounded-2xl p-4 border border-slate-700 flex flex-col gap-3">
           <div>
-            <h3 className="font-semibold text-slate-50">{name}</h3>
-            <p className="text-xs text-slate-400 mt-1">{description}</p>
-          </div>
-          <div className="flex flex-wrap gap-1">
-            {tags.map((tag) => (
-              <span
-                key={tag}
-                className="text-[10px] px-2 py-1 rounded-full bg-slate-800/70 border border-slate-700 text-slate-300"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-          <div className="flex justify-end">
-            <PrimaryButton onClick={onUse}>Use template</PrimaryButton>
-          </div>
-        </div>
-      );
-
-      const ActionLog = ({ entries }) => (
-        <div className="glass-soft rounded-2xl p-4 border border-slate-700 h-40 overflow-y-auto text-xs text-slate-300">
-          <div className="flex justify-between items-center mb-2">
-            <span className="font-semibold text-slate-100 text-sm">
-              Action Log
-            </span>
-            <span className="text-[10px] text-slate-500">
-              {entries.length === 0 ? "No actions yet" : `${entries.length} actions`}
-            </span>
-          </div>
-          {entries.length === 0 ? (
-            <p className="text-slate-500">
-              Actions such as “Create repo template”, “Generate README” and
-              others will appear here.
+            <p class="text-[11px] uppercase tracking-wide text-slate-500 mb-1">
+              Platform
             </p>
-          ) : (
-            <ul className="space-y-1">
-              {entries.map((e, i) => (
-                <li key={i} className="flex gap-2">
-                  <span className="mt-[2px] text-[9px] text-indigo-400">
-                    ●
-                  </span>
-                  <span>{e}</span>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      );
-
-      const Sidebar = () => (
-        <aside className="w-64 hidden lg:flex flex-col gap-6 glass border-r border-slate-800 p-5">
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-2xl bg-indigo-500 flex items-center justify-center text-lg font-bold shadow-lg shadow-indigo-500/40">
-              Q
-            </div>
-            <div className="flex flex-col">
-              <span className="text-sm font-semibold text-slate-50">
-                Repo Management
-              </span>
-              <span className="text-[11px] text-slate-400">
-                QuietWire · Aya (ayaxor)
-              </span>
-            </div>
+            <h2 class="text-sm font-semibold text-slate-50">
+              Repo Management Console
+            </h2>
+            <p class="text-xs text-slate-400">
+              Designed by Aya to standardize GitHub repos across QuietWire.
+            </p>
           </div>
 
-          <nav className="flex flex-col gap-1 text-sm">
-            <span className="text-[11px] uppercase tracking-wide text-slate-500 mb-1">
-              Navigation
-            </span>
-            <button className="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-900/70 text-slate-100 border border-slate-700">
-              <span className="text-xs">🏠</span>
+          <nav class="flex flex-col gap-1 text-sm">
+            <button
+              class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-900/80 text-slate-100 border border-slate-700"
+            >
+              <span>🏠</span>
               <span>Dashboard</span>
             </button>
-            <button className="flex items-center gap-2 px-3 py-2 rounded-xl text-slate-400 hover:text-slate-100 hover:bg-slate-900/60">
-              <span className="text-xs">📁</span>
+            <button
+              class="flex items-center gap-2 px-3 py-2 rounded-xl text-slate-400 hover:text-slate-100 hover:bg-slate-900/60"
+            >
+              <span>📁</span>
               <span>Repositories</span>
             </button>
-            <button className="flex items-center gap-2 px-3 py-2 rounded-xl text-slate-400 hover:text-slate-100 hover:bg-slate-900/60">
-              <span className="text-xs">🧩</span>
+            <button
+              class="flex items-center gap-2 px-3 py-2 rounded-xl text-slate-400 hover:text-slate-100 hover:bg-slate-900/60"
+            >
+              <span>🧩</span>
               <span>Templates</span>
             </button>
-            <button className="flex items-center gap-2 px-3 py-2 rounded-xl text-slate-400 hover:text-slate-100 hover:bg-slate-900/60">
-              <span className="text-xs">⚙️</span>
+            <button
+              class="flex items-center gap-2 px-3 py-2 rounded-xl text-slate-400 hover:text-slate-100 hover:bg-slate-900/60"
+            >
+              <span>⚙️</span>
               <span>Settings</span>
             </button>
           </nav>
 
-          <div className="mt-auto text-[11px] text-slate-500">
-            Built as a concept platform by Aya to manage and standardize GitHub
-            repositories across QuietWire projects.
+          <div class="mt-auto text-[11px] text-slate-500">
+            v0.1 – Front-end prototype.  
+            Backend & GitHub API integration are planned as a next step.
           </div>
         </aside>
-      );
 
-      const App = () => {
-        const [log, setLog] = useState([]);
-
-        const pushLog = (msg) => {
-          const stamp = new Date().toLocaleTimeString();
-          setLog((prev) => [`[${stamp}] ${msg}`, ...prev]);
-        };
-
-        const quickAction = (label) => () => {
-          pushLog(label);
-        };
-
-        return (
-          <div className="min-h-screen flex text-slate-100">
-            <Sidebar />
-
-            <main className="flex-1 flex flex-col">
-              {/* Top bar */}
-              <header className="glass border-b border-slate-800 px-4 sm:px-6 py-3 flex items-center justify-between">
-                <div>
-                  <p className="text-xs uppercase tracking-wide text-slate-500">
-                    QuietWire · Internal Concept
-                  </p>
-                  <h1 className="text-lg sm:text-xl font-semibold text-slate-50">
-                    GitHub Repo Management Platform
-                  </h1>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="text-xs text-slate-400 text-right hidden sm:block">
-                    Signed in as
-                    <br />
-                    <span className="font-semibold text-slate-100">
-                      Aya (ayaxor)
-                    </span>
-                  </span>
-                  <div className="w-9 h-9 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-sm font-bold shadow-lg shadow-indigo-500/40">
-                    A
-                  </div>
-                </div>
-              </header>
-
-              {/* Content */}
-              <div className="flex-1 p-4 sm:p-6 flex flex-col gap-6">
-                {/* Stats + Quick actions */}
-                <section className="grid grid-cols-1 xl:grid-cols-3 gap-4">
-                  <div className="xl:col-span-2 flex flex-col gap-4">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                      <StatCard
-                        label="Active QuietWire Repositories"
-                        value="15+"
-                        hint="Example number – this platform is focused on structure, naming, and consistency."
-                      />
-                      <StatCard
-                        label="Standard Templates"
-                        value="4"
-                        hint="Mesh / Language Programs / Security / AI Companions"
-                      />
-                      <StatCard
-                        label="Ready–to–Apply Policies"
-                        value="3"
-                        hint="SECURITY, CODEOWNERS, LICENSE"
-                      />
-                    </div>
-
-                    {/* Quick actions panel */}
-                    <div className="glass-soft rounded-2xl border border-slate-700 p-4 flex flex-col gap-3">
-                      <div className="flex flex-wrap items-center justify-between gap-3">
-                        <div>
-                          <h2 className="text-sm font-semibold text-slate-50">
-                            Quick Actions
-                          </h2>
-                          <p className="text-xs text-slate-400">
-                            Conceptual controls to standardize GitHub
-                            repositories across projects.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        <PrimaryButton
-                          onClick={quickAction(
-                            "Triggered: Create new Mesh-ready repository template."
-                          )}
-                        >
-                          + Mesh-ready repo
-                        </PrimaryButton>
-                        <PrimaryButton
-                          onClick={quickAction(
-                            "Triggered: Generate standard README structure."
-                          )}
-                        >
-                          Generate README
-                        </PrimaryButton>
-                        <PrimaryButton
-                          onClick={quickAction(
-                            "Triggered: Attach SECURITY and LICENSE files."
-                          )}
-                        >
-                          Add security & license
-                        </PrimaryButton>
-                        <PrimaryButton
-                          onClick={quickAction(
-                            "Triggered: Prepare language-program repo layout."
-                          )}
-                        >
-                          Language program layout
-                        </PrimaryButton>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Action log */}
-                  <ActionLog entries={log} />
-                </section>
-
-                {/* Templates area */}
-                <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-                  <TemplateCard
-                    name="Mesh Project Template"
-                    description="Repository layout for Mesh / Wirelight experiments, with comments, seed messages, and log structure."
-                    tags={["Mesh", "Wirelight", "Comments"]}
-                    onUse={quickAction(
-                      "Selected template: Mesh Project Template."
-                    )}
-                  />
-                  <TemplateCard
-                    name="Language Program Template"
-                    description="Structured layout for multi-level language learning programs (like Aya’s Arabic & English tracks)."
-                    tags={["Education", "Levels", "Multilingual"]}
-                    onUse={quickAction(
-                      "Selected template: Language Program Template."
-                    )}
-                  />
-                  <TemplateCard
-                    name="Security / CAP Template"
-                    description="Repository starter for security, narrative analysis, and CAP-related material."
-                    tags={["Security", "CAP", "Policy"]}
-                    onUse={quickAction("Selected template: Security Template.")}
-                  />
-                  <TemplateCard
-                    name="AI Companion Workspace"
-                    description="Workspace repository for AI companions configuration, prompts, and interaction logs."
-                    tags={["AI", "Companions", "Config"]}
-                    onUse={quickAction(
-                      "Selected template: AI Companion Workspace."
-                    )}
-                  />
-                  <TemplateCard
-                    name="Docs-First Prototype"
-                    description="Documentation–first repo with strong README and structured notes before code."
-                    tags={["Docs", "Design", "Planning"]}
-                    onUse={quickAction(
-                      "Selected template: Docs-First Prototype."
-                    )}
-                  />
-                </section>
-              </div>
-            </main>
+        <!-- Content -->
+        <section class="flex-1 p-4 sm:p-6 flex flex-col gap-6">
+          <!-- Stats -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="glass-soft rounded-2xl p-4 border border-slate-700">
+              <p
+                class="text-[11px] uppercase tracking-wide text-slate-400 mb-1"
+              >
+                QuietWire Repositories
+              </p>
+              <p class="text-2xl font-bold text-slate-50">15+</p>
+              <p class="text-xs text-slate-400 mt-1">
+                Example value – this console focuses on structure & templates.
+              </p>
+            </div>
+            <div class="glass-soft rounded-2xl p-4 border border-slate-700">
+              <p
+                class="text-[11px] uppercase tracking-wide text-slate-400 mb-1"
+              >
+                Repo Templates
+              </p>
+              <p class="text-2xl font-bold text-slate-50">4</p>
+              <p class="text-xs text-slate-400 mt-1">
+                Mesh · Language Programs · Security · AI Companions
+              </p>
+            </div>
+            <div class="glass-soft rounded-2xl p-4 border border-slate-700">
+              <p
+                class="text-[11px] uppercase tracking-wide text-slate-400 mb-1"
+              >
+                Standard Files
+              </p>
+              <p class="text-2xl font-bold text-slate-50">3</p>
+              <p class="text-xs text-slate-400 mt-1">
+                SECURITY · LICENSE · CODE_OF_CONDUCT
+              </p>
+            </div>
           </div>
-        );
-      };
 
-      const root = ReactDOM.createRoot(document.getElementById("root"));
-      root.render(<App />);
+          <!-- Forms + Log -->
+          <div class="grid grid-cols-1 xl:grid-cols-3 gap-4">
+            <!-- Left column: forms -->
+            <div class="xl:col-span-2 flex flex-col gap-4">
+              <!-- Create repo template -->
+              <div
+                class="glass-soft rounded-2xl p-4 border border-slate-700 flex flex-col gap-3"
+              >
+                <div class="flex justify-between items-center gap-2">
+                  <div>
+                    <h2 class="text-sm font-semibold text-slate-50">
+                      Create Repository Plan
+                    </h2>
+                    <p class="text-xs text-slate-400">
+                      Define a repo structure before creating it in GitHub.
+                    </p>
+                  </div>
+                  <span class="text-[11px] px-2 py-1 rounded-full bg-slate-900/70 border border-slate-700 text-slate-300">
+                    Concept Only
+                  </span>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                  <div class="flex flex-col gap-1">
+                    <label class="text-xs text-slate-300"
+                      >Repository name</label
+                    >
+                    <input
+                      id="repoName"
+                      type="text"
+                      placeholder="e.g. quietwire-mesh-lab"
+                      class="px-3 py-2 rounded-xl bg-slate-900/80 border border-slate-700 text-slate-100 text-sm focus:outline-none focus:ring-1 focus:ring-indigo-500"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <label class="text-xs text-slate-300"
+                      >Template type</label
+                    >
+                    <select
+                      id="templateType"
+                      class="px-3 py-2 rounded-xl bg-slate-900/80 border border-slate-700 text-slate-100 text-sm focus:outline-none focus:ring-1 focus:ring-indigo-500"
+                    >
+                      <option value="Mesh">Mesh / Wirelight</option>
+                      <option value="Language">Language Program</option>
+                      <option value="Security">Security / CAP</option>
+                      <option value="AI">AI Companion Workspace</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                  <button
+                    id="btnGeneratePlan"
+                    class="px-4 py-2 rounded-xl text-sm font-semibold bg-indigo-500 hover:bg-indigo-400 active:bg-indigo-600 transition shadow-md shadow-indigo-500/30"
+                  >
+                    Generate repo plan
+                  </button>
+                  <button
+                    id="btnGenerateReadme"
+                    class="px-4 py-2 rounded-xl text-sm font-semibold bg-slate-800 hover:bg-slate-700 border border-slate-700 transition"
+                  >
+                    Generate README snippet
+                  </button>
+                </div>
+
+                <!-- Generated output -->
+                <div
+                  id="output"
+                  class="mt-3 text-xs bg-slate-900/80 border border-slate-800 rounded-xl p-3 font-mono text-slate-200 whitespace-pre-wrap min-h-[72px]"
+                >
+                  <!-- filled by JS -->
+                </div>
+              </div>
+
+              <!-- Template cards (static but professional) -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                <div
+                  class="glass-soft rounded-2xl p-4 border border-slate-700 flex flex-col gap-2"
+                >
+                  <h3 class="font-semibold text-slate-50">
+                    Mesh Project Template
+                  </h3>
+                  <p class="text-xs text-slate-400">
+                    Includes comments, seed messages, logs, and security notes
+                    for Mesh / Wirelight experiments.
+                  </p>
+                  <span
+                    class="text-[11px] inline-flex mt-1 px-2 py-1 rounded-full bg-slate-900/70 border border-slate-700 text-slate-300"
+                  >
+                    Tags: mesh · wirelight · experimental
+                  </span>
+                </div>
+                <div
+                  class="glass-soft rounded-2xl p-4 border border-slate-700 flex flex-col gap-2"
+                >
+                  <h3 class="font-semibold text-slate-50">
+                    Language Program Template
+                  </h3>
+                  <p class="text-xs text-slate-400">
+                    Multi-level structure used for Aya’s English & Arabic
+                    mastery programs.
+                  </p>
+                  <span
+                    class="text-[11px] inline-flex mt-1 px-2 py-1 rounded-full bg-slate-900/70 border border-slate-700 text-slate-300"
+                  >
+                    Tags: education · levels · multilingual
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right column: log -->
+            <div
+              class="glass-soft rounded-2xl p-4 border border-slate-700 flex flex-col gap-2 text-xs"
+            >
+              <div class="flex justify-between items-center">
+                <h2 class="text-sm font-semibold text-slate-50">
+                  Action Log
+                </h2>
+                <button
+                  id="btnClearLog"
+                  class="text-[11px] px-2 py-1 rounded-full bg-slate-900/80 border border-slate-700 text-slate-300"
+                >
+                  Clear
+                </button>
+              </div>
+              <p class="text-slate-400">
+                This log records actions done inside the console. In a future
+                version, these actions can call the real GitHub API.
+              </p>
+              <div
+                id="log"
+                class="mt-2 space-y-1 max-h-56 overflow-y-auto font-mono text-[11px] text-slate-200"
+              ></div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const logEl = document.getElementById("log");
+      const outputEl = document.getElementById("output");
+      const repoNameEl = document.getElementById("repoName");
+      const templateTypeEl = document.getElementById("templateType");
+
+      function addLog(message) {
+        const stamp = new Date().toLocaleTimeString();
+        const line = document.createElement("div");
+        line.textContent = "[" + stamp + "] " + message;
+        logEl.prepend(line);
+      }
+
+      document
+        .getElementById("btnGeneratePlan")
+        .addEventListener("click", () => {
+          const name = repoNameEl.value.trim() || "example-repository";
+          const type = templateTypeEl.value;
+
+          const plan =
+            "Repository plan for: " +
+            name +
+            "\\n" +
+            "- Type: " +
+            type +
+            "\\n" +
+            "- Standard files: README.md, SECURITY.md, LICENSE, CODE_OF_CONDUCT.md\\n" +
+            "- Recommended folders: /docs, /.github, /logs";
+
+          outputEl.textContent = plan;
+          addLog("Generated repository plan for '" + name + "' (" + type + ").");
+        });
+
+      document
+        .getElementById("btnGenerateReadme")
+        .addEventListener("click", () => {
+          const name = repoNameEl.value.trim() || "example-repository";
+          const type = templateTypeEl.value;
+
+          const snippet =
+            "# " +
+            name +
+            " – " +
+            type +
+            " template\\n\\n" +
+            "This repository was created using Aya's GitHub Repo Management Platform concept.\\n" +
+            "It follows QuietWire standards for structure, security, and documentation.";
+
+          outputEl.textContent = snippet;
+          addLog("Generated README snippet for '" + name + "'.");
+        });
+
+      document.getElementById("btnClearLog").addEventListener("click", () => {
+        logEl.textContent = "";
+        addLog("Log cleared.");
+      });
+
+      // Initial log entry
+      addLog("Console loaded. Ready for actions.");
     </script>
   </body>
 </html>
-
